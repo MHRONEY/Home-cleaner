@@ -3,8 +3,9 @@
 
 /* ====================START GLOBAL STYLES==================== */
 :root {
-	--primary-color: #2678D1;
-  --secondary-color:#093260;
+	--bs-primary-rgb: 38, 120, 209;
+  --bs-secondary-rgb: 9, 50, 96;
+  
 
 }
 
@@ -60,87 +61,13 @@
 
 /* SPACING ENDS */
 
-/* BACKGROUND */
-.section_bg {
-  background-color: rgba(9, 132, 227, 0.1);
-}
 
-/* BACKGROUND ENDS */
-/* TEXT COLORS */
-.text__primary {
-  color: #2678D1;
-}
 
-.text__secondary {
-  color: #093260;
-}
 
-.text__tertiary {
-  color: #2a2b47;
-}
 
-/* TEXT COLORS ENDS */
-/* CUSTOM BUTTONS */
-.button {
-  display: block;
-  color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: transparent;
-  padding: 16px 32px;
-  border-radius: 50rem;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  font-size: 18px;
-  border: none;
-}
 
-.button:hover {
-  color: white;
-  text-decoration: none;
-}
 
-.button:focus {
-  outline: none;
-}
 
-.button__primary {
-  border: 2px solid #6c5ce7;
-  border-radius: 50rem;
-}
-
-.button__primary:hover {
-  background-color: #6c5ce7;
-}
-
-.button__secondary {
-  border: 2px solid #0984e3;
-  border-radius: 50rem;
-}
-
-.button__secondary:hover {
-  background-color: #0984e3;
-}
-
-.button-light {
-  color: #0984e3;
-  font-size: 18px;
-}
-
-.button-light:hover {
-  text-decoration: none;
-  color: #2a2b47;
-}
-
-@media (max-width: 767px) {
-  .button {
-    padding: 10px 20px;
-    font-size: 15px;
-  }
-}
-
-/* CUSTOM BUTTONS ENDS */
 /* this class will change cursor type to pointer */
 .cursor-pointer {
   cursor: pointer;
@@ -326,23 +253,17 @@ nav {
 
 /* ------------------navbar end------------------*/
 
-.bgimage {
-  width:100%;
-  height:500px;
-  background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-
-}
-.bgimage h5 {
-  color:white;
-  text-shadow:2px 2px #333;
-}
 
 
 /*---------------------------home end---------------------------*/
 
+/*--- Slider -----*/
+
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
 
 
 
