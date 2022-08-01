@@ -32,48 +32,6 @@ $(function () {
     })
 
 
-    // home hero slider
-    $('.home-slider').owlCarousel({
-        center: true,
-        items: 1,
-        loop: true,
-        autoplay: true,
-        dots: true
-    });
-
-
-
-    // owl carousel
-    $('.ss__slider-container').owlCarousel({
-        center: true,
-        items: 2,
-        loop: true,
-        autoplay: true,
-        dots: true,
-        autoplayTimeout: 2000,
-        margin: 10,
-        responsive: {
-            475: {
-                items: 3
-            },
-            767: {
-                items: 4
-            }
-        }
-    });
-
-
-
-    //feedback slider
-    $('.feedback__slider').owlCarousel({
-        center: true,
-        items: 1,
-        loop: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 3000
-    });
-
 
     // faq accordion
     var faqAccordions = $('.faq__accordion');
