@@ -2,6 +2,5 @@
 @import url("./plugins/icofont.css");
 
 
-/* == owl carousel == */
-@import url("./plugins/owl.carousel.min.css");
-@import url("./plugins/owl.theme.default.min.css");
+/* == splidejs == */
+@import url("./plugins/splide.min.css");
