@@ -236,14 +236,14 @@ nav {
 }
 
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .header__social-nav {
     display: none;
   }
 
 
 
-}
+} */
 
 
 
@@ -262,9 +262,18 @@ nav {
 
 .splide__slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
+.slider_banner{
+  height: 60vw;
+  max-height: 90vh;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 
 
 
