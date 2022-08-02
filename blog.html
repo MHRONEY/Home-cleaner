@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- title -->
+    <title>Home Cleaning</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" href="./css/plugins.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <!-- start header -->
+    <header>
+        <!-- navbar start -->
+        <nav id="main-nav" class="navbar navbar-light navbar-expand-lg">
+            <div class="container">
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#home">
+                    <img src="./assets/img/Logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- nav links -->
+                <div class="collapse navbar-collapse mr-4 nav-right" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-0 nav-line" href="/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 nav-line" href="#features">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 nav-line" href="#screenshots">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 nav-line" href="#feedbacks">FAQS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 active nav-line" href="/blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0" href="#pricing">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media icon-->
+
+                <div class="header__social-nav d-none d-xl-flex justify-content-between">
+                    <a class="header_position-relative text-decoration-none mr-2" href="#">
+                        <i class="icofont-facebook"></i>
+                    </a>
+                    <a class="header_position-relative  text-decoration-none mr-2" href="#">
+                        <i class="icofont-pinterest"></i>
+                    </a>
+                    <a class="header_position-relative  text-decoration-none mr-2" href="#">
+                        <i class="icofont-twitter"></i>
+                    </a>
+                    <a class="header_position-relative text-decoration-none mr-2" href="#">
+                        <i class="icofont-linkedin"></i>
+                    </a>
+                    <a class="header_position-relative  text-decoration-none mr-2" href="#">
+                        <i class="icofont-instagram"></i>
+                    </a>
+                    <a class="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2" href="/#">Get a quote</a>
+                </div>
+
+                <!-- header button-->
+
+
+
+            </div>
+        </nav>
+        <!-- navbar ends -->
+    </header>
+    <!-- end header -->
+
+
+    <main>
+        <!-- start home -->
+        <section id="home" class="home">
+            <div class="hero-banner">
+                <div class="position-absolute background-image h-100 w-100">
+                    <div class="bg-image-wrapper">
+                        <img src="./assets/img/blog_banner.png" class="img bg-img" />
+                    </div>
+                    <div class="bg-overlay h-100 w-100"></div>
+                </div>
+                <div class="container h-100 position-relative w-50 d-flex">
+                    <div class="d-center w-100">
+                        <h2 class="hero-heading text-center text-white">Blog Carousel</h2>
+                        <hr class="bg-light w-20" />
+                        <p class="text-center text-white hero-text">Cleaning can be a chore and we know you have many
+                            choices when you consider hiring a comprehensive, high quality, reliable cleaning service
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end home -->
+
+
+        <!-- start features -->
+        <section class="blog-main blog-grid">
+            <div class="container pb-5 mb-2 mb-md-4">
+
+                <!---Feature post-->
+                <div class="feature-post-carousel pt-5"></div>
+
+                <hr class="mt-5" />
+
+                <!--main post grid-->
+                <div class="row pt-5 mt-md-2">
+                    <section class="col-lg-8">
+
+                        <!----Mansonry grid layout-->
+                        <div class="mansonry-grid">
+
+                            <!----Post card item with thumb-->
+                            <article class="mansonry-grid-item ">
+                                <div class="card post-card card-thumb-ready">
+
+                                    <!----Post thumb image-->
+                                    <a href="/#" class="blog-items-thumb position-relative">
+                                        <img class="blog-items-img"
+                                            src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" />
+                                        <div class="thumb-overlay h-100 w-100"></div>
+                                    </a>
+
+                                    <!----Post title and excerpt-->
+                                    <div class="card-body card-content">
+                                        <a href="" class="blog-card-title">
+                                            <h5>This is the blog tilte for the main blog page</h5>
+                                        </a>
+                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
+                                            main blog post and it can be change through from storage or something</p>
+                                        <!----tag elements-->
+                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                    </div>
+
+                                    <!----Post card meta details-->
+                                    <div class="card-footer card-bottom">
+                                        <div class="card-meta-container d-lg-flex align-items-center">
+                                            <a href="" class="post-meta meta-link">
+                                                <div
+                                                    class="author-info d-flex align-items-center justify-content-between">
+                                                    <div class="author-avater-wrapper">
+                                                        <img class="author-avater author-img"
+                                                            src="/assets/img/favicon.png">
+                                                    </div>
+                                                    <div class="author-details">
+                                                        <p class="author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="ms-auto text-nowrap">
+                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                    15</a>
+                                                <span class="blog-items-meta-divider mx-2"></span>
+                                                <a class="blog-items-meta-link text-nowrap"
+                                                    href="blog-single.html#comments"><i
+                                                        class="icofont-speech-comments"></i><span
+                                                        class="comm-count">8</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!----Post card item with thumb-->
+                            <article class="mansonry-grid-item ">
+                                <div class="card post-card card-thumb-ready">
+
+                                    <!----Post thumb image-->
+                                    <a href="/#" class="blog-items-thumb position-relative">
+                                        <img class="blog-items-img"
+                                            src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
+                                        <div class="thumb-overlay h-100 w-100"></div>
+                                    </a>
+
+                                    <!----Post title and excerpt-->
+                                    <div class="card-body card-content">
+                                        <a href="" class="blog-card-title">
+                                            <h4>This is the blog tilte for the main blog page</h4>
+                                        </a>
+                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
+                                            main blog post and it can be change through from storage or something</p>
+                                        <!----tag elements-->
+                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                    </div>
+
+                                    <!----Post card meta details-->
+                                    <div class="card-footer card-bottom">
+                                        <div class="card-meta-container d-lg-flex align-items-center">
+                                            <a href="" class="post-meta meta-link">
+                                                <div
+                                                    class="author-info d-flex align-items-center justify-content-between">
+                                                    <div class="author-avater-wrapper">
+                                                        <img class="author-avater author-img"
+                                                            src="/assets/img/favicon.png">
+                                                    </div>
+                                                    <div class="author-details">
+                                                        <p class="author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="ms-auto text-nowrap">
+                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                    15</a>
+                                                <span class="blog-items-meta-divider mx-2"></span>
+                                                <a class="blog-items-meta-link text-nowrap"
+                                                    href="blog-single.html#comments"><i
+                                                        class="icofont-speech-comments"></i><span
+                                                        class="comm-count">8</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!----Post card item with thumb-->
+                            <article class="mansonry-grid-item">
+                                <div class="card post-card card-thumb-ready">
+
+                                    <!----Post thumb image-->
+                                    <a href="/#" class="blog-items-thumb position-relative">
+                                        <img class="blog-items-img"
+                                            src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" />
+                                        <div class="thumb-overlay h-100 w-100"></div>
+                                    </a>
+
+                                    <!----Post title and excerpt-->
+                                    <div class="card-body card-content">
+                                        <a href="" class="blog-card-title">
+                                            <h4>This is the blog tilte for the main blog page</h4>
+                                        </a>
+                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
+                                            main blog post and it can be change through from storage or something</p>
+                                        <!----tag elements-->
+                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                    </div>
+
+                                    <!----Post card meta details-->
+                                    <div class="card-footer card-bottom">
+                                        <div class="card-meta-container d-lg-flex align-items-center">
+                                            <a href="" class="post-meta meta-link">
+                                                <div
+                                                    class="author-info d-flex align-items-center justify-content-between">
+                                                    <div class="author-avater-wrapper">
+                                                        <img class="author-avater author-img"
+                                                            src="/assets/img/favicon.png">
+                                                    </div>
+                                                    <div class="author-details">
+                                                        <p class="author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="ms-auto text-nowrap">
+                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                    15</a>
+                                                <span class="blog-items-meta-divider mx-2"></span>
+                                                <a class="blog-items-meta-link text-nowrap"
+                                                    href="blog-single.html#comments"><i
+                                                        class="icofont-speech-comments"></i><span
+                                                        class="comm-count">8</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!----Post card item with thumb-->
+                            <article class="mansonry-grid-item ">
+                                <div class="card post-card card-thumb-ready">
+
+                                    <!----Post thumb image-->
+                                    <a href="/#" class="blog-items-thumb position-relative">
+                                        <img class="blog-items-img"
+                                            src="./assets/img/who-s-denilo-V0p1IlRWWhw-unsplash.jpg" />
+                                        <div class="thumb-overlay h-100 w-100"></div>
+                                    </a>
+
+                                    <!----Post title and excerpt-->
+                                    <div class="card-body card-content">
+                                        <a href="" class="blog-card-title">
+                                            <h4>This is the blog tilte for the main blog page</h4>
+                                        </a>
+                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
+                                            main blog post and it can be change through from storage or something</p>
+                                        <!----tag elements-->
+                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                    </div>
+
+                                    <!----Post card meta details-->
+                                    <div class="card-footer card-bottom">
+                                        <div class="card-meta-container d-lg-flex align-items-center">
+                                            <a href="" class="post-meta meta-link">
+                                                <div
+                                                    class="author-info d-flex align-items-center justify-content-between">
+                                                    <div class="author-avater-wrapper">
+                                                        <img class="author-avater author-img"
+                                                            src="/assets/img/favicon.png">
+                                                    </div>
+                                                    <div class="author-details">
+                                                        <p class="author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="ms-auto text-nowrap">
+                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                    15</a>
+                                                <span class="blog-items-meta-divider mx-2"></span>
+                                                <a class="blog-items-meta-link text-nowrap"
+                                                    href="blog-single.html#comments"><i
+                                                        class="icofont-speech-comments"></i><span
+                                                        class="comm-count">8</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </section>
+                    <aside class="col-lg-4">
+                        <div class="side-bar-container border-start ms-lg-auto ms-auto w100" style="max-width: 22rem;">
+                            <div class="side-bar-wrapper">
+                                <div class="blog-cate-container">
+                                    <div class="sidebar-feature-title cate-title mb-md-3">
+                                        <h5>
+                                            Blog Categories
+                                        </h5>
+                                    </div>
+                                    <ul class="cate-list ps-0">
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="fs-xs cate-name ">House</a>
+                                                <span class="cate-item-count">7</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="cate-name">Interior</a>
+                                                <span class="cate-item-count">3</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="cate-name">kitchen</a>
+                                                <span class="cate-item-count">8</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="cate-name">Office</a>
+                                                <span class="cate-item-count">12</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="cate-name">Yard</a>
+                                                <span class="cate-item-count">9</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="cate-name">roof top</a>
+                                                <span class="cate-item-count">5</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                        <li>
+                                            <div class="d-flex cate-item justify-content-between">
+                                                <a href="" class="cate-name">Bathroom</a>
+                                                <span class="cate-item-count">7</span>
+                                            </div>
+                                            <hr class="mt-0 mb-1" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="mt-md-4 mb-md-4">
+                                <div class="blog-trend-container">
+                                    <div class="sidebar-feature-title trending-title mb-md-3">
+                                    <h5>Now Trending</h5>
+                                    </div>
+                                    <div class="blog-trending-post">
+                                        <a href="/#" class="post-item d-flex align-items-center justify-content-space mb-md-3">
+                                            <div class="blog-items-thumb position-relative w-50" style="max-width: 80px;" >
+                                                <img class="blog-items-img rounded" src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" alt="post thumb image"/>
+                                                <div class="thumb-overlay h-100 w-100"></div>
+                                            </div>
+                                            <div class="trend-post-content ms-3">
+                                                <div href="" class="blog-card-title">
+                                                    <h6>This is the blog tilte for the main blog page</h6>
+                                                </div>
+                                                <div class="author-details">
+                                                    <p class="fs-xs author-name mb-0">Themedepo</p>
+                                                    <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="/#" class="post-item d-flex align-items-center justify-content-space mb-md-3">
+                                            <div class="blog-items-thumb position-relative w-50" style="max-width: 80px;" >
+                                                <img class="blog-items-img rounded" src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" alt="post thumb image"/>
+                                                <div class="thumb-overlay h-100 w-100"></div>
+                                            </div>
+                                            <div class="trend-post-content ms-3">
+                                                <div href="" class="blog-card-title">
+                                                    <h6>This is the blog tilte for the main blog page</h6>
+                                                </div>
+                                                <div class="author-details">
+                                                    <p class="fs-xs author-name mb-0">Themedepo</p>
+                                                    <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="/#" class="post-item d-flex align-items-center justify-content-space mb-md-3">
+                                            <div class="blog-items-thumb position-relative w-50" style="max-width: 80px;" >
+                                                <img class="blog-items-img rounded" src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" alt="post thumb image"/>
+                                                <div class="thumb-overlay h-100 w-100"></div>
+                                            </div>
+                                            <div class="trend-post-content ms-3">
+                                                <div href="" class="blog-card-title">
+                                                    <h6>This is the blog tilte for the main blog page</h6>
+                                                </div>
+                                                <div class="author-details">
+                                                    <p class="fs-xs author-name mb-0">Themedepo</p>
+                                                    <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end features -->
+    </main>
+    <footer class="section-padding-top position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5 footer__column">
+                    <img class="footer__logo" src="./assets/img/Logo.png" alt="mto">
+                    <p class="footer__description text-secondary-2">
+                        AppFeatur is an app that helps you organize
+                        yourself. AppFeatur app template that was
+                        designed to cater to most of the
+                        modern app landing page design.
+                    </p>
+                    <div class="footer__social-nav d-flex justify-content-between">
+                        <a class="position-relative rounded-pill text-decoration-none" href="#">
+                            <i class="icofont-facebook"></i>
+                        </a>
+                        <a class="position-relative rounded-pill text-decoration-none" href="#">
+                            <i class="icofont-pinterest"></i>
+                        </a>
+                        <a class="position-relative rounded-pill text-decoration-none" href="#">
+                            <i class="icofont-twitter"></i>
+                        </a>
+                        <a class="position-relative rounded-pill text-decoration-none" href="#">
+                            <i class="icofont-linkedin"></i>
+                        </a>
+                        <a class="position-relative rounded-pill text-decoration-none" href="#">
+                            <i class="icofont-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 footer__column">
+                    <h3 class="footer__heading text-secondary-1">Menu</h3>
+                    <ul class="footer-menu">
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize active" href="#home">Home</a>
+                        </li>
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize" href="#features">Featurs</a>
+                        </li>
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize"
+                                href="#screenshots">Screensshots</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize" href="#feedbacks">feedbacks</a>
+                        </li>
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize" href="#faq">FAQs</a></li>
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="mb-1"><a class="text-decoration-none text-capitalize" href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-5 footer__column">
+                    <h3 class="footer__heading text-secondary-1">Download</h3>
+
+                    <!-- app download links -->
+                    <div class="d-flex footer__download-app-link">
+                        <a href="#" class="button button__primary text-capitalize">google play</a>
+                        <a href="#" class="button button__secondary text-capitalize">apple store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

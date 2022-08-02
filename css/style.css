@@ -5,6 +5,11 @@
 :root {
 	--primary-color: #2678D1;
   --secondary-color:#093260;
+  --light-color:#fff;
+  --offSet-white:#f2f2f2;
+  --black-color:#000;
+  --shadow-color:rgba(0,0,0, .2);
+  --border-color:#eee;
 
 }
 
@@ -83,7 +88,6 @@
 /* CUSTOM BUTTONS */
 .button {
   display: block;
-  color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -93,7 +97,9 @@
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   font-size: 18px;
+  font-weight: bold;
   border: none;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -131,6 +137,25 @@
 .button-light:hover {
   text-decoration: none;
   color: #2a2b47;
+}
+.tag-btn{
+  border: 1px solid var(--offSet-white);
+  font-size: .75rem;
+}
+.tag-btn:hover{
+  border-color:var(--offSet-white);
+  background-color: var(--offSet-white);
+}
+
+.btn-accent{
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
@@ -189,11 +214,18 @@ for making this, parent tag should be position relative*/
 
 
 /* ------------------navbar start------------------*/
+#main-nav{
+  height: 103px;
+}
 .navbar {
   position: absolute;
   background-color: transparent;
   width: 100%;
   z-index: 2;
+}
+.nav-right{
+  justify-content: end;
+  margin-right: 1.5vw;
 }
 
 .navbar .navbar-nav {
@@ -216,14 +248,14 @@ nav {
 .navbar-show {
   position: fixed !important;
   top: -100px;
-
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   z-index: 100;
-  -webkit-box-shadow: 0px -4px 25px #2678D1;
-          box-shadow: 0px -4px 25px #2678D1;
+  -webkit-box-shadow: 0px -4px 10px var(--shadow-color);
+          box-shadow: 0px -4px 10px var(--shadow-color);
+          border-bottom: 1px solid var(--border-color);
 }
 
 .navbar-show .navbar-nav a {
@@ -231,7 +263,7 @@ nav {
 }
 
 .navbar-brand img {
-  width: 100px;
+  width: 150px;
   
 }
 
@@ -294,18 +326,17 @@ nav {
 /*--Social Icon----*/
 
 .header_position-relative {
-  
-  color: #a7a7a7;
+  color: var(--primary-color);
+  display: flex;
   margin: 10px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   justify-content: center;
-
+  align-items: center;
   border-radius: 50%;
-
-  border: solid 1px #061524;
-
+  border: solid 1px var(--offSet-white);
+  box-shadow: 1px 1px 8px var(--offSet-white);
 }
 
 

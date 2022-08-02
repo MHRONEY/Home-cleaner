@@ -8,11 +8,11 @@ $(function () {
     const navbar = document.querySelector('#main-nav');
 
     // initialize scrollspy
-    const scrollspy = new VanillaScrollspy(navbar);
-    scrollspy.init();
+    // const scrollspy = new VanillaScrollspy(navbar);
+    // scrollspy.init();
 
-    // hide pre loading after document loaded
-    preloader.addClass('hide');
+    // // hide pre loading after document loaded
+    // preloader.addClass('hide');
 
 
 
@@ -60,6 +60,18 @@ $(function () {
         }
     }
 })
+
+$( document ).ready(function() {
+    $('.mansonry-grid').masonry({
+columnWidth: 400,
+itemSelector: '.mansonry-grid-item',
+gutter: 40,
+percentPosition: true,
+
+});
+});
+
+
 
 
 
