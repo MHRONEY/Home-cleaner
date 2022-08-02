@@ -142,6 +142,10 @@
 }
 
 /* CUSTOM BUTTONS ENDS */
+
+
+
+
 /* this class will change cursor type to pointer */
 .cursor-pointer {
   cursor: pointer;
@@ -333,9 +337,38 @@ nav {
 
 /* ------------------navbar end------------------*/
 
+/*------------------Section Background image and Color And Overlay------------------*/
+.background-image {
+  top: 0;
+  left: 0;
+}
+
+.bg-image-wrapper {
+  position: relative;
+}
+
+.bg-img {
+  width: 100%;
+}
+
+.had-image .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  opacity: .5;
+}
+
+.section-title .image-empty .bg-overlay {
+  background-color: var(--secondary-color);
+  background: var(--secondary-color);
+  background: linear-gradient(90deg, rgba(9,50,96,1) 0%, transparent 29%,transparent 50%);;
+  opacity: .4;
+}
 
 
-/*---------------------------home end---------------------------*/
+
+/*---------------------------home---------------------------*/
 
 /*--- Slider -----*/
 

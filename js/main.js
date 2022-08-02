@@ -67,7 +67,8 @@
 //     }
 // })
 
-$( document ).ready(function() {
+try {
+  $( document ).ready(function() {
     $('.mansonry-grid').masonry({
 columnWidth: 400,
 itemSelector: '.mansonry-grid-item',
@@ -78,12 +79,40 @@ percentPosition: true,
 });
 
 
+} catch (error) {
+  
+}
 
 
-
-  document.addEventListener( 'DOMContentLoaded', function() {
+document.addEventListener( 'DOMContentLoaded', function() {
+  try {
     var splide = new Splide( '#image-carousel', {
-        type: 'loop'
-    } );
-    splide.mount();
+      type: 'loop'
   } );
+  splide.mount();
+
+  //Slider for Feature blog post
+  var splideFeature = new Splide('#feature-carousel', {
+    type: 'loop',
+    perPage: 2,
+    perMove: 1,
+});
+splideFeature.mount();
+  } catch (error) {
+    
+  }
+
+    //Slider for Feature blog post
+  try {
+
+  var splideFeature = new Splide('#feature-carousel', {
+    type: 'loop',
+    gap    : '2rem',
+    perPage: 2,
+    perMove: 1,
+});
+splideFeature.mount();
+  } catch (error) {
+    
+  }
+} );

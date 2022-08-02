@@ -4,6 +4,9 @@
     --light-color: #fff;
     --offSet-white: #f2f2f2;
     --black-color: #242424;
+    --bs-primary-rgb: 38, 120, 209;
+    --bs-secondary-rgb: 9, 50, 96;
+    
 }
 
 a {
@@ -17,7 +20,6 @@ img{
     box-sizing: border-box;
 }
 
-
 .hero-banner {
     position: relative;
     min-height: 650px;
@@ -25,27 +27,55 @@ img{
     align-items: center;
 }
 
-.background-image {
-    top: 0;
-    left: 0;
-}
 
-.bg-image-wrapper {
+/*----feature post item----*/
+.feature-post-list .image-croped{
     position: relative;
+    padding-top: 50%;
 }
 
-.bg-img {
-    width: 100%;
+.feature-post-list .blog-items-img{
+position: absolute;
+top: 0;
 }
 
-.bg-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.post-item .tag-btn{
+    display: none;
+}
+
+.splide__arrows button{
+    top: 0%;
+    transform: translateY(-4rem);
+    border-radius: 0!important;
+    background-color: var(--light-color);
+    box-shadow: 1px 1px 6px rgba(0,0,0, .2);
+}
+
+.splide__arrows button:hover svg{
+    fill:var(--light-color)!important;
+}
+
+.splide__arrows button:hover{
     background-color: var(--secondary-color);
-    opacity: .5;
 }
 
+.splide__arrow--prev {
+    right: 3.5em!important;
+    left: auto;
+}
+
+
+.splide__pagination {
+    bottom: -2em;
+    left: auto!important;
+}
+
+.splide__pagination button{
+    border: 1px solid var(--secondary-color);
+}
+.splide__pagination .is-active{
+    background-color: var(--primary-color);
+}
 
 /*----mansonry layout---*/
 .mansonry-grid {
@@ -66,9 +96,7 @@ img{
 
 }
 
-
-
-.blog-items-thumb img {
+.blog-item-thumb img {
     width: 100%;
 
 }
@@ -90,12 +118,12 @@ img{
     font-size: 14px;
 }
 
+
 /*---- Meta link -----*/
 .card-meta-container * {
     font-size: 14px !important;
     color: var(--black-color);
 }
-
 
 .meta-link {
     text-decoration: none;
