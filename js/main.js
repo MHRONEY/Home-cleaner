@@ -7,6 +7,12 @@
 
 //     const navbar = document.querySelector('#main-nav');
 
+    // initialize scrollspy
+    // const scrollspy = new VanillaScrollspy(navbar);
+    // scrollspy.init();
+
+    // // hide pre loading after document loaded
+    // preloader.addClass('hide');
 //     // initialize scrollspy
 //     const scrollspy = new VanillaScrollspy(navbar);
 //     scrollspy.init();
@@ -60,6 +66,18 @@
 //         }
 //     }
 // })
+
+$( document ).ready(function() {
+    $('.mansonry-grid').masonry({
+columnWidth: 400,
+itemSelector: '.mansonry-grid-item',
+gutter: 40,
+percentPosition: true,
+
+});
+});
+
+
 
 
 

@@ -1,0 +1,172 @@
+:root {
+	--primary-color: #2678D1;
+  --secondary-color:#093260;
+  --light-color:#fff;
+  --offSet-white:#f2f2f2;
+  --black-color:#242424;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.hero-banner{
+    position: relative;
+min-height:657px;
+display: flex;
+align-items: center;
+}
+.background-image{
+    top: 0;
+    left: 0;
+}
+.bg-image-wrapper{
+    position: relative;
+}
+.bg-img{
+    width: 100%;
+}
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    opacity: .5;
+}
+
+
+/*----mansonry layout---*/
+.mansonry-grid {
+    position: relative;
+    margin: 0;
+  }
+  
+  .mansonry-grid-item {
+    width: calc(50% - 15px);
+    margin-bottom:30px; 
+    border-color: var(--border-color);
+
+  }
+
+  .card-thumb-ready{
+    position: relative;
+    overflow: hidden;
+  }
+
+
+
+.blog-items-thumb img{
+    width: 100%;
+    
+}
+
+.thumb-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    opacity: .1;
+}
+
+.blog-card-title{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.blog-card-excerpt{
+    font-size: 14px;
+}
+
+/*---- Meta link -----*/
+
+.card-meta-container *{
+    font-size: 14px!important;
+    color: var(--black-color);
+}
+
+
+.meta-link{
+    text-decoration: none;
+}
+
+.author-avater-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid var(--offSet-white);
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 7px rgb(0,0,0,.14);
+}
+.author-avater-wrapper img{
+    width: 100%;
+
+}
+
+.author-details{
+    font-size: 12px;
+    position: relative;
+}
+.author-name{
+    font-weight: 600;
+
+}
+.author-position{
+    text-decoration: none;
+}
+
+.blog-items-meta-link{
+    text-decoration: none;
+}
+
+.blog-items-meta-link i{
+    margin-right: 5px;
+}
+.blog-items-meta-divider{
+    display: inline-block;
+    width: 1px;
+    height: 1rem;
+    margin: 0 1rem;
+    background-color: var(--black-color);
+    opacity: .3;
+    vertical-align: middle;
+}
+
+
+/*------side bar------*/
+.side-bar-container{
+    padding:5px 15px;
+}
+
+.sidebar-feature-title{
+position: relative;
+}
+
+.cate-item{
+    font-size: .80rem;
+}
+
+.cate-name{
+    color: var(--black-color);
+    text-decoration: none;
+}
+.cate-list hr{
+   /* display: none; */
+   opacity: .05;
+}
+.cate-list li:last-child hr{
+    display: none;
+    opacity: .05;
+ }
+ .trend-post-content .author-position{
+    display: none;
+ }
+
