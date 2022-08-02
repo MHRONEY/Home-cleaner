@@ -3,7 +3,6 @@
 
 /* ====================START GLOBAL STYLES==================== */
 :root {
-<<<<<<< HEAD
 	--primary-color: #2678D1;
   --secondary-color:#093260;
   --light-color:#fff;
@@ -11,11 +10,9 @@
   --black-color:#000;
   --shadow-color:rgba(0,0,0, .2);
   --border-color:#eee;
-=======
 	--bs-primary-rgb: 38, 120, 209;
   --bs-secondary-rgb: 9, 50, 96;
   
->>>>>>> e9d319eeb641a09539c408f87bbffb14975f3429
 
 }
 
@@ -74,7 +71,6 @@
 
 
 
-<<<<<<< HEAD
 /* TEXT COLORS ENDS */
 /* CUSTOM BUTTONS */
 .button {
@@ -92,13 +88,10 @@
   border: none;
   text-decoration: none;
 }
-=======
->>>>>>> e9d319eeb641a09539c408f87bbffb14975f3429
 
 
 
 
-<<<<<<< HEAD
 .button__primary:hover {
   background-color: #6c5ce7;
 }
@@ -149,8 +142,6 @@
 }
 
 /* CUSTOM BUTTONS ENDS */
-=======
->>>>>>> e9d319eeb641a09539c408f87bbffb14975f3429
 /* this class will change cursor type to pointer */
 .cursor-pointer {
   cursor: pointer;
