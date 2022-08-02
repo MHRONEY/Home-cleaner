@@ -147,7 +147,7 @@ align-items: center;
 }
 
 .sidebar-feature-title{
-
+position: relative;
 }
 
 .cate-item{
