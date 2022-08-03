@@ -3,6 +3,13 @@
 
 /* ====================START GLOBAL STYLES==================== */
 :root {
+	--primary-color: #2678D1;
+  --secondary-color:#093260;
+  --light-color:#fff;
+  --offSet-white:#f2f2f2;
+  --black-color:#000;
+  --shadow-color:rgba(0,0,0, .2);
+  --border-color:#eee;
 	--bs-primary-rgb: 38, 120, 209;
   --bs-secondary-rgb: 9, 50, 96;
   
@@ -64,6 +71,77 @@
 
 
 
+/* TEXT COLORS ENDS */
+/* CUSTOM BUTTONS */
+.button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  padding: 16px 32px;
+  border-radius: 50rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+}
+
+
+
+
+.button__primary:hover {
+  background-color: #6c5ce7;
+}
+
+.button__secondary {
+  border: 2px solid #0984e3;
+  border-radius: 50rem;
+}
+
+.button__secondary:hover {
+  background-color: #0984e3;
+}
+
+.button-light {
+  color: #0984e3;
+  font-size: 18px;
+}
+
+.button-light:hover {
+  text-decoration: none;
+  color: #2a2b47;
+}
+.tag-btn{
+  border: 1px solid var(--offSet-white);
+  font-size: .75rem;
+}
+.tag-btn:hover{
+  border-color:var(--offSet-white);
+  background-color: var(--offSet-white);
+}
+
+.btn-accent{
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+/* CUSTOM BUTTONS ENDS */
 
 
 
@@ -259,9 +337,38 @@ nav {
 
 /* ------------------navbar end------------------*/
 
+/*------------------Section Background image and Color And Overlay------------------*/
+.background-image {
+  top: 0;
+  left: 0;
+}
+
+.bg-image-wrapper {
+  position: relative;
+}
+
+.bg-img {
+  width: 100%;
+}
+
+.had-image .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  opacity: .5;
+}
+
+.section-title .image-empty .bg-overlay {
+  background-color: var(--secondary-color);
+  background: var(--secondary-color);
+  background: linear-gradient(90deg, rgba(9,50,96,1) 0%, transparent 29%,transparent 50%);;
+  opacity: .4;
+}
 
 
-/*---------------------------home end---------------------------*/
+
+/*---------------------------home---------------------------*/
 
 /*--- Slider -----*/
 
