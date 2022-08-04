@@ -7,12 +7,12 @@
 
 //     const navbar = document.querySelector('#main-nav');
 
-    // initialize scrollspy
-    // const scrollspy = new VanillaScrollspy(navbar);
-    // scrollspy.init();
+// initialize scrollspy
+// const scrollspy = new VanillaScrollspy(navbar);
+// scrollspy.init();
 
-    // // hide pre loading after document loaded
-    // preloader.addClass('hide');
+// // hide pre loading after document loaded
+// preloader.addClass('hide');
 //     // initialize scrollspy
 //     const scrollspy = new VanillaScrollspy(navbar);
 //     scrollspy.init();
@@ -42,7 +42,7 @@
 //     // faq accordion
 //     var faqAccordions = $('.faq__accordion');
 //     var accHeading = $(".faq__accordion-question");
-    
+
 
 //     accHeading.click((e) => {
 //         faqAccordions.removeClass('active');
@@ -51,7 +51,7 @@
 //     })
 
 
-    
+
 
 
 //     function toggleNav() {
@@ -68,51 +68,89 @@
 // })
 
 try {
-  $( document ).ready(function() {
-    $('.mansonry-grid').masonry({
-columnWidth: 400,
-itemSelector: '.mansonry-grid-item',
-gutter: 40,
-percentPosition: true,
+  // masonry 
+  var $grid = $('.mansonry-grid').masonry({
+    itemSelector: '.mansonry-grid-item',
+    //columnWidth:25,
+    // percentPosition: true,
+    //transitionDuration: 0,
+  });
 
-});
-});
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry();
+  });
+
 
 
 } catch (error) {
-  
+
 }
 
 
-document.addEventListener( 'DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   try {
-    var splide = new Splide( '#image-carousel', {
+    var splide = new Splide('#image-carousel', {
       type: 'loop'
-  } );
-  splide.mount();
-
-  //Slider for Feature blog post
-  var splideFeature = new Splide('#feature-carousel', {
-    type: 'loop',
-    perPage: 2,
-    perMove: 1,
-});
-splideFeature.mount();
-  } catch (error) {
-    
-  }
+    });
+    splide.mount();
 
     //Slider for Feature blog post
-  try {
-
-  var splideFeature = new Splide('#feature-carousel', {
-    type: 'loop',
-    gap    : '2rem',
-    perPage: 2,
-    perMove: 1,
-});
-splideFeature.mount();
+    var splideFeature = new Splide('#feature-carousel', {
+      type: 'loop',
+      perPage: 2,
+      perMove: 1,
+    });
+    splide.mount();
   } catch (error) {
-    
+
   }
-} );
+
+  //Slider for Feature blog post
+  try {
+    var splideFeature = new Splide('#feature-carousel', {
+      type: 'loop',
+      gap: '2.1rem',
+      perPage: 3,
+      perMove: 1,
+      breakpoints: {
+        840: {
+          perPage: 2,
+          gap: '1.6rem',
+        },
+        640: {
+          perPage: 1,
+          gap: '1.1rem',
+        },
+      },
+    });
+
+    splideFeature.mount();
+
+    } catch (error) {
+
+    }
+    try {
+      var splideTeam = new Splide('#team-carousel', {
+        type: 'loop',
+        gap: '2.1rem',
+        perPage: 4,
+        perMove: 1,
+        breakpoints: {
+          1080: {
+            perPage: 3,
+            gap: '1.6rem',
+          },
+          840: {
+            perPage: 2,
+            gap: '1.1rem',
+          },
+        },
+      });
+  
+      splideTeam.mount();
+  
+  
+    } catch (error) {
+  
+    }
+  });

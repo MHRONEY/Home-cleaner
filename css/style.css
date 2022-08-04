@@ -12,6 +12,7 @@
   --border-color:#eee;
 	--bs-primary-rgb: 38, 120, 209;
   --bs-secondary-rgb: 9, 50, 96;
+  --bs-body-font-size: .9rem;
   
 
 }
@@ -43,6 +44,10 @@
   small {
     line-height: unset !important;
   }
+}
+
+img{
+  width: 100%;
 }
 
 /* SPACING */
@@ -303,8 +308,19 @@ nav {
 }
 
 
-/*--Social Icon----*/
+/* @media (max-width: 1200px) {
+  .header__social-nav {
+    display: none;
+  }
 
+
+
+} */
+
+
+/*------------------Social Link and icon style------------------------------------*/
+
+/*--Social Icon----*/
 .header_position-relative {
   color: var(--primary-color);
   display: flex;
@@ -319,36 +335,153 @@ nav {
   box-shadow: 1px 1px 8px var(--offSet-white);
 }
 
-
-/* @media (max-width: 1200px) {
-  .header__social-nav {
-    display: none;
-  }
-
-
-
-} */
-
-
-
-
+/*-----on overlay icon-----*/
+.section-had-bg .header_position-relative{
+  color: var(--primary-color);
+  border: none;
+  box-shadow: none;
+  background-color: var(--light-color);
+}
+.section-had-bg .header_position-relative i{
+  color: var(--primary-color);
+}
 
 
 
 /* ------------------navbar end------------------*/
+
+/*-------------------Carousel Style-------------*/
+
+
+.splide__arrows button{
+  top: 0%;
+  transform: translateY(-3rem);
+  border-radius: 0!important;
+  background-color: var(--light-color);
+  box-shadow: 1px 1px 6px rgba(0,0,0, .2);
+  height: 2em;
+  width: 3em;
+}
+
+.splide__arrows button:hover svg{
+  fill:var(--light-color)!important;
+}
+
+.splide__arrows button:hover{
+  background-color: var(--secondary-color);
+}
+
+.splide__arrow--prev {
+  right: 4.5em!important;
+  left: auto;
+}
+
+
+.splide__pagination {
+  bottom: -2em;
+  left: auto!important;
+}
+
+.splide__pagination button{
+  border: 1px solid var(--secondary-color);
+}
+.splide__pagination .is-active{
+  background-color: var(--primary-color);
+}
+
+.team-item .item-thumb{
+  overflow: hidden;
+  padding: .50em;
+}
+
+.team-item .item-thumb .thumb-wrapper{
+padding-top: 120%;
+position: relative;
+}
+
+.item-thumb .thumb-wrapper .image-cropped{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.profile-social-link{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+}
+
+.team-item:hover .profile-social-link{
+  transform: translate(-50%, -110%);
+  visibility: visible;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  opacity: .1;
+}
+
+
+
+
+/*--------------------Form and input style-------------------------------------*/
+
+footer .news-letter-form .form-control{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgba(9,50,96,.8);
+  border: 0;
+  border-color: transparent;
+  padding: 10px;
+  color: var(--light-color);
+}
+
+footer .news-letter-form button{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px 20px;
+}
+
+
 
 /*------------------Section Background image and Color And Overlay------------------*/
 .background-image {
   top: 0;
   left: 0;
 }
+.section-had-bg:not(.footer-section){
+  min-height: 650px;
+    position: relative;
+    overflow: hidden;
+}
 
 .bg-image-wrapper {
-  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.had-image{
+  background-color: var(--secondary-color);
 }
 
 .bg-img {
+  position: absolute;
+  top:0;
+  left: 0;
   width: 100%;
+  /* height: 100%; */
 }
 
 .had-image .bg-overlay {
@@ -356,14 +489,14 @@ nav {
   top: 0;
   left: 0;
   background-color: var(--secondary-color);
-  opacity: .5;
+  opacity: .7;
 }
 
 .section-title .image-empty .bg-overlay {
   background-color: var(--secondary-color);
   background: var(--secondary-color);
   background: linear-gradient(90deg, rgba(9,50,96,1) 0%, transparent 29%,transparent 50%);;
-  opacity: .4;
+  opacity: .5;
 }
 
 
@@ -387,7 +520,9 @@ nav {
   background-size: cover;
   width: 100%;
 }
-
+.section-had-bg *{
+  color: #fff;
+}
 
 
 /*  -------------------------footer start------------------------- */
@@ -444,7 +579,9 @@ footer .footer__social-nav a:hover {
   color: white;
 }
 
-
+.social-link-wrapper a:first-child{
+  margin-left: 0;
+}
 
 
 footer .footer__heading {
@@ -471,7 +608,7 @@ footer .footer__column:first-child {
 
 
 footer .footer-menu li a {
-  color: #2a2b47;
+  color: var(--light-color);
   position: relative;
 }
 
@@ -520,6 +657,8 @@ footer .footer__download-app-link .button:hover {
 
 /*  -------------------------footer end------------------------- */
 /*# sourceMappingURL=style.css.map */
+
+
 
 
 
