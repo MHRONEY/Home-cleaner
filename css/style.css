@@ -350,7 +350,83 @@ nav {
 
 /* ------------------navbar end------------------*/
 
+/*-------------------Carousel Style-------------*/
 
+
+.splide__arrows button{
+  top: 0%;
+  transform: translateY(-3rem);
+  border-radius: 0!important;
+  background-color: var(--light-color);
+  box-shadow: 1px 1px 6px rgba(0,0,0, .2);
+  height: 2em;
+  width: 3em;
+}
+
+.splide__arrows button:hover svg{
+  fill:var(--light-color)!important;
+}
+
+.splide__arrows button:hover{
+  background-color: var(--secondary-color);
+}
+
+.splide__arrow--prev {
+  right: 4.5em!important;
+  left: auto;
+}
+
+
+.splide__pagination {
+  bottom: -2em;
+  left: auto!important;
+}
+
+.splide__pagination button{
+  border: 1px solid var(--secondary-color);
+}
+.splide__pagination .is-active{
+  background-color: var(--primary-color);
+}
+
+.team-item .item-thumb{
+  overflow: hidden;
+  padding: .50em;
+}
+
+.team-item .item-thumb .thumb-wrapper{
+padding-top: 120%;
+position: relative;
+}
+
+.item-thumb .thumb-wrapper .image-cropped{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.profile-social-link{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+}
+
+.team-item:hover .profile-social-link{
+  transform: translate(-50%, -110%);
+  visibility: visible;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  opacity: .1;
+}
 
 
 
@@ -383,6 +459,11 @@ footer .news-letter-form button{
 .background-image {
   top: 0;
   left: 0;
+}
+.section-had-bg:not(.footer-section){
+  min-height: 650px;
+    position: relative;
+    overflow: hidden;
 }
 
 .bg-image-wrapper {
