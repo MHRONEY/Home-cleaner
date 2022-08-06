@@ -44,6 +44,11 @@
   small {
     line-height: unset !important;
   }
+
+}
+
+a{
+  text-decoration: none;
 }
 
 img{
@@ -350,8 +355,10 @@ nav {
 
 /* ------------------navbar end------------------*/
 
-/*-------------------Carousel Style-------------*/
 
+
+
+/*--------------------------Carousel Style--------------------------*/
 
 .splide__arrows button{
   top: 0%;
@@ -417,7 +424,7 @@ height: 100%;
 .team-item:hover .profile-social-link{
   transform: translate(-50%, -110%);
   visibility: visible;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .thumb-overlay {
@@ -428,10 +435,17 @@ height: 100%;
   opacity: .1;
 }
 
-
+/*-------------------List and ---------------------------------------------*/
+.our-values-list li{
+list-style: inherit;
+}
 
 
 /*--------------------Form and input style-------------------------------------*/
+
+form *{
+  box-sizing: border-box;
+}
 
 footer .news-letter-form .form-control{
   border-bottom-left-radius: 5px;
@@ -439,7 +453,7 @@ footer .news-letter-form .form-control{
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   background-color: rgba(9,50,96,.8);
-  border: 0;
+  border: 1px solid rgba(9,50,96,.8);
   border-color: transparent;
   padding: 10px;
   color: var(--light-color);
@@ -453,17 +467,37 @@ footer .news-letter-form button{
   padding: 10px 20px;
 }
 
-
-
-/*------------------Section Background image and Color And Overlay------------------*/
-.background-image {
-  top: 0;
-  left: 0;
+/*------------------Tab and accordion-------------------------------*/
+.tab-content nav{
+  background-color: transparent!important;
 }
+
+.nav-tabs .nav-link,.nav-tabs .active{
+  background-color: transparent!important;
+  border-bottom-color: transparent!important;
+}
+
+/*------------------Section and Container --------------------------*/
+.section{
+  position: relative;
+}
+
+.section-content, .contant{
+  position: relative;
+}
+
 .section-had-bg:not(.footer-section){
   min-height: 650px;
     position: relative;
     overflow: hidden;
+}
+
+
+
+/*------------------Section Background Image and Color Overlay------------------*/
+.background-image {
+  top: 0;
+  left: 0;
 }
 
 .bg-image-wrapper {
@@ -495,7 +529,7 @@ footer .news-letter-form button{
 .section-title .image-empty .bg-overlay {
   background-color: var(--secondary-color);
   background: var(--secondary-color);
-  background: linear-gradient(90deg, rgba(9,50,96,1) 0%, transparent 29%,transparent 50%);;
+  background: linear-gradient(90deg, rgba(38, 120, 209,1) 0%, transparent 29%,transparent 50%);;
   opacity: .5;
 }
 
@@ -521,7 +555,7 @@ footer .news-letter-form button{
   width: 100%;
 }
 .section-had-bg *{
-  color: #fff;
+  /* color: #fff; */
 }
 
 
