@@ -161,6 +161,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+<<<<<<< HEAD
+  //........... Home > Services.................//
+  
+  
+=======
 
 try {
     var splideFeature = new Splide('#service-carousel', {
@@ -195,3 +200,4 @@ try {
   } catch (error) {
     
   }
+>>>>>>> main
