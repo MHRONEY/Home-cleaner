@@ -67,6 +67,11 @@
 //     }
 // })
 
+
+// tab control
+
+
+
 try {
   // masonry 
   var $grid = $('.mansonry-grid').masonry({
@@ -105,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  //Slider for Feature blog post
+  //Carousel for Feature blog post
   try {
     var splideFeature = new Splide('#feature-carousel', {
       type: 'loop',
@@ -156,6 +161,43 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+<<<<<<< HEAD
   //........... Home > Services.................//
   
   
+=======
+
+try {
+    var splideFeature = new Splide('#service-carousel', {
+      type: 'loop',
+      gap: '2.1rem',
+      perPage: 3,
+      perMove: 1,
+      breakpoints: {
+        840: {
+          perPage: 2,
+          gap: '1.6rem',
+        },
+        640: {
+          perPage: 1,
+          gap: '1.1rem',
+        },
+      },
+    });
+
+    splideFeature.mount();
+
+    } catch (error) {
+
+    }
+
+
+
+
+
+  try {
+    
+  } catch (error) {
+    
+  }
+>>>>>>> main

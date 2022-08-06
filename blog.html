@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
     <!-- title -->
@@ -16,9 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
     <!-- google font -->
     <link
@@ -60,7 +61,7 @@
                             <a class="nav-link px-0 nav-line" href="/index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0 nav-line" href="#features">ABOUT US</a>
+                            <a class="nav-link px-0 nav-line" href="/about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-0 nav-line" href="#screenshots">SERVICES</a>
@@ -122,10 +123,10 @@
                 </div>
 
                 <!----Section Content-->
-                <div class="container h-100 position-relative w-50 d-flex">
-                    <div class="content d-center w-100">
-                        <h2 class="hero-heading text-center text-white">Blog Carousel</h2>
-                        <hr class="bg-light w-25 m-auto mt-3 mb-3" />
+                <div class="container h-100 position-relative w-100 d-flex">
+                    <div class="content d-center w-50">
+                        <h1 class="hero-heading text-center text-white">Blog Carousel</h1>
+                        <hr class="bg-light w-25 m-auto mt-3 mb-3 p-1" />
                         <p class="text-center text-white hero-text">Cleaning can be a chore and we know you have many
                             choices when you consider hiring a comprehensive, high quality, reliable cleaning service
                         </p>
@@ -136,794 +137,839 @@
         <!-- end home -->
 
         <!-- start features -->
-        <section class="section-title pt-3 pb-3 mt-5 mb-2 position-relative">
+        <section class="section blog-main blog-grid">
 
             <!----Section Bacground-->
             <div class="position-absolute background-image image-empty h-100 w-100">
                 <div class="bg-image-wrapper">
                 </div>
-                <div class="bg-overlay h-100 w-100"></div>
+                <div class="bg-overlay h-100 w-100 "></div>
             </div>
 
-            <!----Section Content-->
-            <div class="content container section-title">
-                <h2>Popular News</h2>
-            </div>
-        </section>
-        <section class="blog-main blog-grid container">
-            <div class="content container pb-5 mb-2 mb-md-4">
-                <!---Feature post-->
-                <div id="feature-carousel" class="splide feature-post-carousel" style="margin-bottom: 5rem;">
-                    <div class="splide__track">
-                        <ul class="splide__list feature-post-list">
-                            <li class="splide__slide">
+            <!-----Section Content-->
+            <div class="section-content">
 
-                                <!----Post card item with thumb-->
-                                <article class="post-item">
-                                    <div class="card post-card card-thumb-ready">
+                <!-----Section Title-->
+                <div class="section-title pt-4 pb-4 mt-5 mb-4 position-relative">
 
-                                        <!----Post thumb image-->
-                                        <a href="/#" class="blog-item-thumb position-relative">
-                                            <div class="thumb-wrapper image-croped">
-                                                <img class="blog-items-img"
-                                                    src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
-                                        </a>
-
-                                        <!----Post title and excerpt-->
-                                        <div class="card-body card-content">
-                                            <a href="" class="blog-card-title">
-                                                <h5>This is the blog tilte for the main blog page</h5>
-                                            </a>
-                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
-                                                the
-                                                main blog post and it can be change through from storage or something
-                                            </p>
-                                            <!----tag elements-->
-                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                        </div>
-
-                                        <!----Post card meta details-->
-                                        <div class="card-footer card-bottom">
-                                            <div class="card-meta-container d-lg-flex align-items-center">
-                                                <a href="" class="post-meta meta-link">
-
-                                                    <!----Author image and name-->
-                                                    <div
-                                                        class="author-info d-flex align-items-center justify-content-between">
-                                                        <div class="author-avater-wrapper">
-                                                            <img class="author-avater author-img"
-                                                                src="/assets/img/favicon.png">
-                                                        </div>
-                                                        <div class="author-details">
-                                                            <p class="author-name mb-0">Themedepo</p>
-                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                                <!----Post date and intrection counter-->
-                                                <div class="ms-auto text-nowrap">
-                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                        15</a>
-                                                    <span class="blog-items-meta-divider mx-2"></span>
-                                                    <a class="blog-items-meta-link text-nowrap"
-                                                        href="blog-single.html#comments"><i
-                                                            class="icofont-speech-comments"></i><span
-                                                            class="comm-count">8</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="splide__slide">
-                                <!----Post card item with thumb-->
-                                <article class="post-item ">
-                                    <div class="card post-card card-thumb-ready">
-
-                                        <!----Post thumb image-->
-                                        <a href="/#" class="blog-item-thumb position-relative">
-                                            <div class="thumb-wrapper image-croped">
-                                                <img class="blog-items-img"
-                                                    src="./assets/img/colorful-composition-with-sponges-rags-gloves-detergent-general-cleaning-cleaning-service-concept.jpg" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
-                                        </a>
-
-                                        <!----Post title and excerpt-->
-                                        <div class="card-body card-content">
-                                            <a href="" class="blog-card-title">
-                                                <h5>This is the blog tilte for the main blog page</h5>
-                                            </a>
-                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
-                                                the
-                                                main blog post and it can be change through from storage or something
-                                            </p>
-                                            <!----tag elements-->
-                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                        </div>
-
-                                        <!----Post card meta details-->
-                                        <div class="card-footer card-bottom">
-                                            <div class="card-meta-container d-lg-flex align-items-center">
-                                                <a href="" class="post-meta meta-link">
-
-                                                    <!----Author image and name-->
-                                                    <div
-                                                        class="author-info d-flex align-items-center justify-content-between">
-                                                        <div class="author-avater-wrapper">
-                                                            <img class="author-avater author-img"
-                                                                src="/assets/img/favicon.png">
-                                                        </div>
-                                                        <div class="author-details">
-                                                            <p class="author-name mb-0">Themedepo</p>
-                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                                <!----Post date and intrection counter-->
-                                                <div class="ms-auto text-nowrap">
-                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                        15</a>
-                                                    <span class="blog-items-meta-divider mx-2"></span>
-                                                    <a class="blog-items-meta-link text-nowrap"
-                                                        href="blog-single.html#comments"><i
-                                                            class="icofont-speech-comments"></i><span
-                                                            class="comm-count">8</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="splide__slide">
-                                <!----Post card item with thumb-->
-                                <article class="post-item ">
-                                    <div class="card post-card card-thumb-ready">
-
-                                        <!----Post thumb image-->
-                                        <a href="/#" class="blog-item-thumb position-relative">
-                                            <div class="thumb-wrapper image-croped">
-                                                <img class="blog-items-img"
-                                                    src="./assets/img/concept-man-cleaning-his-home-with-copyspace-wall.jpg" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
-                                        </a>
-
-                                        <!----Post title and excerpt-->
-                                        <div class="card-body card-content">
-                                            <a href="" class="blog-card-title">
-                                                <h5>This is the blog tilte for the main blog page</h5>
-                                            </a>
-                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
-                                                the
-                                                main blog post and it can be change through from storage or something
-                                            </p>
-                                            <!----tag elements-->
-                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                        </div>
-
-                                        <!----Post card meta details-->
-                                        <div class="card-footer card-bottom">
-                                            <div class="card-meta-container d-lg-flex align-items-center">
-                                                <a href="" class="post-meta meta-link">
-
-                                                    <!----Author image and name-->
-                                                    <div
-                                                        class="author-info d-flex align-items-center justify-content-between">
-                                                        <div class="author-avater-wrapper">
-                                                            <img class="author-avater author-img"
-                                                                src="/assets/img/favicon.png">
-                                                        </div>
-                                                        <div class="author-details">
-                                                            <p class="author-name mb-0">Themedepo</p>
-                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                                <!----Post date and intrection counter-->
-                                                <div class="ms-auto text-nowrap">
-                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                        15</a>
-                                                    <span class="blog-items-meta-divider mx-2"></span>
-                                                    <a class="blog-items-meta-link text-nowrap"
-                                                        href="blog-single.html#comments"><i
-                                                            class="icofont-speech-comments"></i><span
-                                                            class="comm-count">8</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="splide__slide">
-                                <!----Post card item with thumb-->
-                                <article class="post-item ">
-                                    <div class="card post-card card-thumb-ready">
-
-                                        <!----Post thumb image-->
-                                        <a href="/#" class="blog-item-thumb position-relative">
-                                            <div class="thumb-wrapper image-croped">
-                                                <img class="blog-items-img"
-                                                    src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
-                                        </a>
-
-                                        <!----Post title and excerpt-->
-                                        <div class="card-body card-content">
-                                            <a href="" class="blog-card-title">
-                                                <h5>This is the blog tilte for the main blog page</h5>
-                                            </a>
-                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
-                                                the
-                                                main blog post and it can be change through from storage or something
-                                            </p>
-                                            <!----tag elements-->
-                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                        </div>
-
-                                        <!----Post card meta details-->
-                                        <div class="card-footer card-bottom">
-                                            <div class="card-meta-container d-lg-flex align-items-center">
-                                                <a href="" class="post-meta meta-link">
-
-                                                    <!----Author image and name-->
-                                                    <div
-                                                        class="author-info d-flex align-items-center justify-content-between">
-                                                        <div class="author-avater-wrapper">
-                                                            <img class="author-avater author-img"
-                                                                src="/assets/img/favicon.png">
-                                                        </div>
-                                                        <div class="author-details">
-                                                            <p class="author-name mb-0">Themedepo</p>
-                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                                <!----Post date and intrection counter-->
-                                                <div class="ms-auto text-nowrap">
-                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                        15</a>
-                                                    <span class="blog-items-meta-divider mx-2"></span>
-                                                    <a class="blog-items-meta-link text-nowrap"
-                                                        href="blog-single.html#comments"><i
-                                                            class="icofont-speech-comments"></i><span
-                                                            class="comm-count">8</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="splide__slide">
-                                <!----Post card item with thumb-->
-                                <article class="post-item ">
-                                    <div class="card post-card card-thumb-ready">
-
-                                        <!----Post thumb image-->
-                                        <a href="/#" class="blog-item-thumb position-relative">
-                                            <div class="thumb-wrapper image-croped">
-                                                <img class="blog-items-img"
-                                                    src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
-                                        </a>
-
-                                        <!----Post title and excerpt-->
-                                        <div class="card-body card-content">
-                                            <a href="" class="blog-card-title">
-                                                <h5>This is the blog tilte for the main blog page</h5>
-                                            </a>
-                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
-                                                the
-                                                main blog post and it can be change through from storage or something
-                                            </p>
-                                            <!----tag elements-->
-                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                        </div>
-
-                                        <!----Post card meta details-->
-                                        <div class="card-footer card-bottom">
-                                            <div class="card-meta-container d-lg-flex align-items-center">
-                                                <a href="" class="post-meta meta-link">
-
-                                                    <!----Author image and name-->
-                                                    <div
-                                                        class="author-info d-flex align-items-center justify-content-between">
-                                                        <div class="author-avater-wrapper">
-                                                            <img class="author-avater author-img"
-                                                                src="/assets/img/favicon.png">
-                                                        </div>
-                                                        <div class="author-details">
-                                                            <p class="author-name mb-0">Themedepo</p>
-                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-
-                                                <!----Post date and intrection counter-->
-                                                <div class="ms-auto text-nowrap">
-                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                        15</a>
-                                                    <span class="blog-items-meta-divider mx-2"></span>
-                                                    <a class="blog-items-meta-link text-nowrap"
-                                                        href="blog-single.html#comments"><i
-                                                            class="icofont-speech-comments"></i><span
-                                                            class="comm-count">8</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
+                    <!----Title Bacground-->
+                    <div class="position-absolute background-image image-empty h-100 w-100">
+                        <div class="bg-image-wrapper">
+                        </div>
+                        <div class="bg-overlay h-100 w-100"></div>
+                    </div>
+                    <!----Section Title Content-->
+                    <div class="content container section-title">
+                        <h2 class="mb-0">More than <span style="color: var(--primary-color);">10 years</span> of
+                            cleaning
+                            experience</h2>
                     </div>
                 </div>
 
-                <!----Section divider-->
-                <hr class="mt-5" />
+                  <!-----Main Content-->
+                <div class="main-content container pb-5 mb-2 mb-md-4">
+                    <!---Feature post-->
+                    <div id="feature-carousel" class="splide feature-post-carousel" style="margin-bottom: 5rem;">
+                        <div class="splide__track">
+                            <ul class="splide__list feature-post-list">
+                                <li class="splide__slide">
 
-                <!--main post grid-->
-                <div class="row pt-5 mt-md-2">
-                    <section class="col-lg-8 col-sm-12 col-md-12">
+                                    <!----Post card item with thumb-->
+                                    <article class="post-item">
+                                        <div class="card post-card card-thumb-ready">
 
-                        <!----Mansonry grid layout-->
-                        <div class="row mansonry-grid ">
-
-                            <!----Post card item with thumb-->
-                            <article class="mansonry-grid-item col-md-6 col-md-6 col-sm-12">
-                                <div class="card post-card card-thumb-ready">
-
-                                    <!----Post thumb image-->
-                                    <a href="/#" class="blog-item-thumb position-relative">
-                                        <img class="blog-items-img"
-                                            src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" />
-                                        <div class="thumb-overlay h-100 w-100"></div>
-                                    </a>
-
-                                    <!----Post title and excerpt-->
-                                    <div class="card-body card-content">
-                                        <a href="" class="blog-card-title">
-                                            <h5>This is the blog tilte for the main blog page</h5>
-                                        </a>
-                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
-                                            main blog post and it can be change through from storage or something</p>
-                                        <!----tag elements-->
-                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">Clean Life</a>
-                                    </div>
-
-                                    <!----Post card meta details-->
-                                    <div class="card-footer card-bottom">
-                                        <div class="card-meta-container d-lg-flex align-items-center">
-                                            <a href="" class="post-meta meta-link">
-
-                                                <!----Author image and name-->
-                                                <div
-                                                    class="author-info d-flex align-items-center justify-content-between">
-                                                    <div class="author-avater-wrapper">
-                                                        <img class="author-avater author-img"
-                                                            src="/assets/img/favicon.png">
-                                                    </div>
-                                                    <div class="author-details">
-                                                        <p class="author-name mb-0">Themedepo</p>
-                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                    </div>
+                                            <!----Post thumb image-->
+                                            <a href="/#" class="blog-item-thumb position-relative">
+                                                <div class="thumb-wrapper image-croped">
+                                                    <img class="blog-items-img"
+                                                        src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
                                                 </div>
                                             </a>
 
-                                            <!----Post date and intrection counter-->
-                                            <div class="ms-auto text-nowrap">
-                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                    15</a>
-                                                <span class="blog-items-meta-divider mx-2"></span>
-                                                <a class="blog-items-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"><i
-                                                        class="icofont-speech-comments"></i><span
-                                                        class="comm-count">8</span></a>
+                                            <!----Post title and excerpt-->
+                                            <div class="card-body card-content">
+                                                <a href="" class="blog-card-title">
+                                                    <h5>This is the blog tilte for the main blog page</h5>
+                                                </a>
+                                                <p class="blog-card-excerpt">this is the pragraph for the post excerpt
+                                                    of
+                                                    the
+                                                    main blog post and it can be change through from storage or
+                                                    something
+                                                </p>
+                                                <!----tag elements-->
+                                                <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                            </div>
+
+                                            <!----Post card meta details-->
+                                            <div class="card-footer card-bottom">
+                                                <div class="card-meta-container d-lg-flex align-items-center">
+                                                    <a href="" class="post-meta meta-link">
+
+                                                        <!----Author image and name-->
+                                                        <div
+                                                            class="author-info d-flex align-items-center justify-content-between">
+                                                            <div class="author-avater-wrapper">
+                                                                <img class="author-avater author-img"
+                                                                    src="/assets/img/favicon.png">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <p class="author-name mb-0">Themedepo</p>
+                                                                <p class="author-position ms-1 mb-0">Manager hight teck
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <!----Post date and intrection counter-->
+                                                    <div class="ms-auto text-nowrap">
+                                                        <a class="blog-items-meta-link meta-date text-nowrap"
+                                                            href="#">Aug
+                                                            15</a>
+                                                        <span class="blog-items-meta-divider mx-2"></span>
+                                                        <a class="blog-items-meta-link text-nowrap"
+                                                            href="blog-single.html#comments"><i
+                                                                class="icofont-speech-comments"></i><span
+                                                                class="comm-count">8</span></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </article>
+                                    </article>
+                                </li>
+                                <li class="splide__slide">
+                                    <!----Post card item with thumb-->
+                                    <article class="post-item ">
+                                        <div class="card post-card card-thumb-ready">
 
-                            <!----Post card item with thumb-->
-                            <article class="mansonry-grid-item col-md-6 col-md-6 col-sm-12">
-                                <div class="card post-card card-thumb-ready">
-
-                                    <!----Post thumb image-->
-                                    <a href="/#" class="blog-item-thumb position-relative">
-                                        <img class="blog-items-img"
-                                            src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
-                                        <div class="thumb-overlay h-100 w-100"></div>
-                                    </a>
-
-                                    <!----Post title and excerpt-->
-                                    <div class="card-body card-content">
-                                        <a href="" class="blog-card-title">
-                                            <h5>This is the blog tilte for the main blog page</h5>
-                                        </a>
-                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
-                                            main blog post and it can be change through from storage or something</p>
-                                        <!----tag elements-->
-                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                    </div>
-
-                                    <!----Post card meta details-->
-                                    <div class="card-footer card-bottom">
-                                        <div class="card-meta-container d-lg-flex align-items-center">
-                                            <a href="" class="post-meta meta-link">
-
-                                                <!----Author image and name-->
-                                                <div
-                                                    class="author-info d-flex align-items-center justify-content-between">
-                                                    <div class="author-avater-wrapper">
-                                                        <img class="author-avater author-img"
-                                                            src="/assets/img/favicon.png">
-                                                    </div>
-                                                    <div class="author-details">
-                                                        <p class="author-name mb-0">Themedepo</p>
-                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                    </div>
+                                            <!----Post thumb image-->
+                                            <a href="/#" class="blog-item-thumb position-relative">
+                                                <div class="thumb-wrapper image-croped">
+                                                    <img class="blog-items-img"
+                                                        src="./assets/img/colorful-composition-with-sponges-rags-gloves-detergent-general-cleaning-cleaning-service-concept.jpg" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
                                                 </div>
                                             </a>
 
-                                            <!----Post date and intrection counter-->
-                                            <div class="ms-auto text-nowrap">
-                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                    15</a>
-                                                <span class="blog-items-meta-divider mx-2"></span>
-                                                <a class="blog-items-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"><i
-                                                        class="icofont-speech-comments"></i><span
-                                                        class="comm-count">8</span></a>
+                                            <!----Post title and excerpt-->
+                                            <div class="card-body card-content">
+                                                <a href="" class="blog-card-title">
+                                                    <h5>This is the blog tilte for the main blog page</h5>
+                                                </a>
+                                                <p class="blog-card-excerpt">this is the pragraph for the post excerpt
+                                                    of
+                                                    the
+                                                    main blog post and it can be change through from storage or
+                                                    something
+                                                </p>
+                                                <!----tag elements-->
+                                                <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                            </div>
+
+                                            <!----Post card meta details-->
+                                            <div class="card-footer card-bottom">
+                                                <div class="card-meta-container d-lg-flex align-items-center">
+                                                    <a href="" class="post-meta meta-link">
+
+                                                        <!----Author image and name-->
+                                                        <div
+                                                            class="author-info d-flex align-items-center justify-content-between">
+                                                            <div class="author-avater-wrapper">
+                                                                <img class="author-avater author-img"
+                                                                    src="/assets/img/favicon.png">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <p class="author-name mb-0">Themedepo</p>
+                                                                <p class="author-position ms-1 mb-0">Manager hight teck
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <!----Post date and intrection counter-->
+                                                    <div class="ms-auto text-nowrap">
+                                                        <a class="blog-items-meta-link meta-date text-nowrap"
+                                                            href="#">Aug
+                                                            15</a>
+                                                        <span class="blog-items-meta-divider mx-2"></span>
+                                                        <a class="blog-items-meta-link text-nowrap"
+                                                            href="blog-single.html#comments"><i
+                                                                class="icofont-speech-comments"></i><span
+                                                                class="comm-count">8</span></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </article>
+                                    </article>
+                                </li>
+                                <li class="splide__slide">
+                                    <!----Post card item with thumb-->
+                                    <article class="post-item ">
+                                        <div class="card post-card card-thumb-ready">
 
-                            <!----Post card item with thumb-->
-                            <article class="mansonry-grid-item col-6 col-md-6 col-sm-12">
-                                <div class="card post-card card-thumb-ready">
-
-                                    <!----Post thumb image-->
-                                    <a href="/#" class="blog-item-thumb position-relative">
-                                        <img class="blog-items-img"
-                                            src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" />
-                                        <div class="thumb-overlay h-100 w-100"></div>
-                                    </a>
-
-                                    <!----Post title and excerpt-->
-                                    <div class="card-body card-content">
-                                        <a href="" class="blog-card-title">
-                                            <h5>This is the blog tilte for the main blog page</h5>
-                                        </a>
-                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
-                                            main blog post and it can be change through from storage or something</p>
-                                        <!----tag elements-->
-                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                    </div>
-
-                                    <!----Post card meta details-->
-                                    <div class="card-footer card-bottom">
-                                        <div class="card-meta-container d-lg-flex align-items-center">
-                                            <a href="" class="post-meta meta-link">
-
-                                                <!----Author image and name-->
-                                                <div
-                                                    class="author-info d-flex align-items-center justify-content-between">
-                                                    <div class="author-avater-wrapper">
-                                                        <img class="author-avater author-img"
-                                                            src="/assets/img/favicon.png">
-                                                    </div>
-                                                    <div class="author-details">
-                                                        <p class="author-name mb-0">Themedepo</p>
-                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                    </div>
+                                            <!----Post thumb image-->
+                                            <a href="/#" class="blog-item-thumb position-relative">
+                                                <div class="thumb-wrapper image-croped">
+                                                    <img class="blog-items-img"
+                                                        src="./assets/img/concept-man-cleaning-his-home-with-copyspace-wall.jpg" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
                                                 </div>
                                             </a>
 
-                                            <!----Post date and intrection counter-->
-                                            <div class="ms-auto text-nowrap">
-                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                    15</a>
-                                                <span class="blog-items-meta-divider mx-2"></span>
-                                                <a class="blog-items-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"><i
-                                                        class="icofont-speech-comments"></i><span
-                                                        class="comm-count">8</span></a>
+                                            <!----Post title and excerpt-->
+                                            <div class="card-body card-content">
+                                                <a href="" class="blog-card-title">
+                                                    <h5>This is the blog tilte for the main blog page</h5>
+                                                </a>
+                                                <p class="blog-card-excerpt">this is the pragraph for the post excerpt
+                                                    of
+                                                    the
+                                                    main blog post and it can be change through from storage or
+                                                    something
+                                                </p>
+                                                <!----tag elements-->
+                                                <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                            </div>
+
+                                            <!----Post card meta details-->
+                                            <div class="card-footer card-bottom">
+                                                <div class="card-meta-container d-lg-flex align-items-center">
+                                                    <a href="" class="post-meta meta-link">
+
+                                                        <!----Author image and name-->
+                                                        <div
+                                                            class="author-info d-flex align-items-center justify-content-between">
+                                                            <div class="author-avater-wrapper">
+                                                                <img class="author-avater author-img"
+                                                                    src="/assets/img/favicon.png">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <p class="author-name mb-0">Themedepo</p>
+                                                                <p class="author-position ms-1 mb-0">Manager hight teck
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <!----Post date and intrection counter-->
+                                                    <div class="ms-auto text-nowrap">
+                                                        <a class="blog-items-meta-link meta-date text-nowrap"
+                                                            href="#">Aug
+                                                            15</a>
+                                                        <span class="blog-items-meta-divider mx-2"></span>
+                                                        <a class="blog-items-meta-link text-nowrap"
+                                                            href="blog-single.html#comments"><i
+                                                                class="icofont-speech-comments"></i><span
+                                                                class="comm-count">8</span></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </article>
+                                    </article>
+                                </li>
+                                <li class="splide__slide">
+                                    <!----Post card item with thumb-->
+                                    <article class="post-item ">
+                                        <div class="card post-card card-thumb-ready">
 
-                            <!----Post card item with thumb-->
-                            <article class="mansonry-grid-item col-md-6 col-md-6 col-sm-12">
-                                <div class="card post-card card-thumb-ready">
-
-                                    <!----Post thumb image-->
-                                    <a href="/#" class="blog-item-thumb position-relative">
-                                        <img class="blog-items-img"
-                                            src="./assets/img/who-s-denilo-V0p1IlRWWhw-unsplash.jpg" />
-                                        <div class="thumb-overlay h-100 w-100"></div>
-                                    </a>
-
-                                    <!----Post title and excerpt-->
-                                    <div class="card-body card-content">
-                                        <a href="" class="blog-card-title">
-                                            <h5>This is the blog tilte for the main blog page</h5>
-                                        </a>
-                                        <p class="blog-card-excerpt">this is the pragraph for the post excerpt of the
-                                            main blog post and it can be change through from storage or something</p>
-                                        <!----tag elements-->
-                                        <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
-                                    </div>
-
-                                    <!----Post card meta details-->
-                                    <div class="card-footer card-bottom">
-                                        <div class="card-meta-container d-lg-flex align-items-center">
-                                            <a href="" class="post-meta meta-link">
-
-                                                <!----Author image and name-->
-                                                <div
-                                                    class="author-info d-flex align-items-center justify-content-between">
-                                                    <div class="author-avater-wrapper">
-                                                        <img class="author-avater author-img"
-                                                            src="/assets/img/favicon.png">
-                                                    </div>
-                                                    <div class="author-details">
-                                                        <p class="author-name mb-0">Themedepo</p>
-                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                    </div>
+                                            <!----Post thumb image-->
+                                            <a href="/#" class="blog-item-thumb position-relative">
+                                                <div class="thumb-wrapper image-croped">
+                                                    <img class="blog-items-img"
+                                                        src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
                                                 </div>
                                             </a>
 
-                                            <!----Post date and intrection counter-->
-                                            <div class="ms-auto text-nowrap">
-                                                <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
-                                                    15</a>
-                                                <span class="blog-items-meta-divider mx-2"></span>
-                                                <a class="blog-items-meta-link text-nowrap"
-                                                    href="blog-single.html#comments"><i
-                                                        class="icofont-speech-comments"></i><span
-                                                        class="comm-count">8</span></a>
+                                            <!----Post title and excerpt-->
+                                            <div class="card-body card-content">
+                                                <a href="" class="blog-card-title">
+                                                    <h5>This is the blog tilte for the main blog page</h5>
+                                                </a>
+                                                <p class="blog-card-excerpt">this is the pragraph for the post excerpt
+                                                    of
+                                                    the
+                                                    main blog post and it can be change through from storage or
+                                                    something
+                                                </p>
+                                                <!----tag elements-->
+                                                <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                            </div>
+
+                                            <!----Post card meta details-->
+                                            <div class="card-footer card-bottom">
+                                                <div class="card-meta-container d-lg-flex align-items-center">
+                                                    <a href="" class="post-meta meta-link">
+
+                                                        <!----Author image and name-->
+                                                        <div
+                                                            class="author-info d-flex align-items-center justify-content-between">
+                                                            <div class="author-avater-wrapper">
+                                                                <img class="author-avater author-img"
+                                                                    src="/assets/img/favicon.png">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <p class="author-name mb-0">Themedepo</p>
+                                                                <p class="author-position ms-1 mb-0">Manager hight teck
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <!----Post date and intrection counter-->
+                                                    <div class="ms-auto text-nowrap">
+                                                        <a class="blog-items-meta-link meta-date text-nowrap"
+                                                            href="#">Aug
+                                                            15</a>
+                                                        <span class="blog-items-meta-divider mx-2"></span>
+                                                        <a class="blog-items-meta-link text-nowrap"
+                                                            href="blog-single.html#comments"><i
+                                                                class="icofont-speech-comments"></i><span
+                                                                class="comm-count">8</span></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </article>
+                                    </article>
+                                </li>
+                                <li class="splide__slide">
+                                    <!----Post card item with thumb-->
+                                    <article class="post-item ">
+                                        <div class="card post-card card-thumb-ready">
 
+                                            <!----Post thumb image-->
+                                            <a href="/#" class="blog-item-thumb position-relative">
+                                                <div class="thumb-wrapper image-croped">
+                                                    <img class="blog-items-img"
+                                                        src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                </div>
+                                            </a>
+
+                                            <!----Post title and excerpt-->
+                                            <div class="card-body card-content">
+                                                <a href="" class="blog-card-title">
+                                                    <h5>This is the blog tilte for the main blog page</h5>
+                                                </a>
+                                                <p class="blog-card-excerpt">this is the pragraph for the post excerpt
+                                                    of
+                                                    the
+                                                    main blog post and it can be change through from storage or
+                                                    something
+                                                </p>
+                                                <!----tag elements-->
+                                                <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                            </div>
+
+                                            <!----Post card meta details-->
+                                            <div class="card-footer card-bottom">
+                                                <div class="card-meta-container d-lg-flex align-items-center">
+                                                    <a href="" class="post-meta meta-link">
+
+                                                        <!----Author image and name-->
+                                                        <div
+                                                            class="author-info d-flex align-items-center justify-content-between">
+                                                            <div class="author-avater-wrapper">
+                                                                <img class="author-avater author-img"
+                                                                    src="/assets/img/favicon.png">
+                                                            </div>
+                                                            <div class="author-details">
+                                                                <p class="author-name mb-0">Themedepo</p>
+                                                                <p class="author-position ms-1 mb-0">Manager hight teck
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <!----Post date and intrection counter-->
+                                                    <div class="ms-auto text-nowrap">
+                                                        <a class="blog-items-meta-link meta-date text-nowrap"
+                                                            href="#">Aug
+                                                            15</a>
+                                                        <span class="blog-items-meta-divider mx-2"></span>
+                                                        <a class="blog-items-meta-link text-nowrap"
+                                                            href="blog-single.html#comments"><i
+                                                                class="icofont-speech-comments"></i><span
+                                                                class="comm-count">8</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
 
-                    </section>
+                    <!----Section divider-->
+                    <hr class="mt-5" />
 
-                    <!----SideBar Auto-->
-                    <aside class="col-lg-4">
-                        <div class="content side-bar-container border-start ms-lg-auto ms-auto w-100"
-                            style="max-width: 22rem; padding: 5px 35px;">
-                            <div class="side-bar-wrapper ">
+                    <!--main post grid-->
+                    <div class="row pt-5 mt-md-2">
+                        <section class="col-lg-8 col-sm-12 col-md-12">
 
-                                <!----Categories list and quantity-->
-                                <div class="blog-cate-container">
-                                    <div class="sidebar-feature-title cate-title mb-md-3">
-                                        <h5>Blog Categories</h5>
-                                    </div>
+                            <!----Mansonry grid layout-->
+                            <div class="row mansonry-grid ">
 
-                                    <!----Categories items list-->
-                                    <ul class="cate-list ps-0">
+                                <!----Post card item with thumb-->
+                                <article class="mansonry-grid-item col-md-6 col-md-6 col-sm-12">
+                                    <div class="card post-card card-thumb-ready">
 
-                                        <!----Categories item-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="fs-xs cate-name ">House</a>
-                                                <span class="cate-item-count">7</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-
-                                        <!----Categories item list-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="cate-name">Interior</a>
-                                                <span class="cate-item-count">3</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-
-                                        <!----Categories item list-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="cate-name">kitchen</a>
-                                                <span class="cate-item-count">8</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-
-                                        <!----Categories item list-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="cate-name">Office</a>
-                                                <span class="cate-item-count">12</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-
-                                        <!----Categories item list-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="cate-name">Yard</a>
-                                                <span class="cate-item-count">9</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-
-                                        <!----Categories item list-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="cate-name">roof top</a>
-                                                <span class="cate-item-count">5</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-
-                                        <!----Categories item list-->
-                                        <li>
-                                            <div class="d-flex cate-item justify-content-between">
-                                                <a href="" class="cate-name">Bathroom</a>
-                                                <span class="cate-item-count">7</span>
-                                            </div>
-                                            <hr class="mt-0 mb-1" />
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr class="mt-md-4 mb-md-4" />
-
-                                <!----Trending post highlights-->
-                                <div class="blog-trend-container">
-                                    <div class="sidebar-feature-title trending-title mb-md-3">
-                                        <h5>Now Trending</h5>
-                                    </div>
-                                    <div class="blog-trending-post">
-
-                                        <!----Trending post -->
-                                        <a href="/#"
-                                            class="post-item d-flex align-items-center justify-content-space mb-md-3">
-
-                                            <!----Post Thumblin -->
-                                            <div class="blog-item-thumb position-relative w-50"
-                                                style="max-width: 80px;">
-                                                <img class="blog-items-img rounded"
-                                                    src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg"
-                                                    alt="post thumb image" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
-
-                                            <!----Post Content-->
-                                            <div class="trend-post-content ms-3">
-                                                <div href="" class="blog-card-title">
-                                                    <h6>This is the blog tilte for the main blog page</h6>
-                                                </div>
-
-                                                <!----Post author name and position-->
-                                                <div class="author-details">
-                                                    <p class="fs-xs author-name mb-0">Themedepo</p>
-                                                    <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                </div>
-                                            </div>
+                                        <!----Post thumb image-->
+                                        <a href="/#" class="blog-item-thumb position-relative">
+                                            <img class="blog-items-img"
+                                                src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" />
+                                            <div class="thumb-overlay h-100 w-100"></div>
                                         </a>
 
-                                        <!----Trending post -->
-                                        <a href="/#"
-                                            class="post-item d-flex align-items-center justify-content-space mb-md-3">
+                                        <!----Post title and excerpt-->
+                                        <div class="card-body card-content">
+                                            <a href="" class="blog-card-title">
+                                                <h5>This is the blog tilte for the main blog page</h5>
+                                            </a>
+                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
+                                                the
+                                                main blog post and it can be change through from storage or something
+                                            </p>
+                                            <!----tag elements-->
+                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">Clean Life</a>
+                                        </div>
 
-                                            <!----Post Thumblin -->
-                                            <div class="blog-item-thumb position-relative w-50"
-                                                style="max-width: 80px;">
-                                                <img class="blog-items-img rounded"
-                                                    src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg"
-                                                    alt="post thumb image" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
+                                        <!----Post card meta details-->
+                                        <div class="card-footer card-bottom">
+                                            <div class="card-meta-container d-lg-flex align-items-center">
+                                                <a href="" class="post-meta meta-link">
 
-                                            <!----Post Content-->
-                                            <div class="trend-post-content ms-3">
-                                                <div href="" class="blog-card-title">
-                                                    <h6>This is the blog tilte for the main blog page</h6>
+                                                    <!----Author image and name-->
+                                                    <div
+                                                        class="author-info d-flex align-items-center justify-content-between">
+                                                        <div class="author-avater-wrapper">
+                                                            <img class="author-avater author-img"
+                                                                src="/assets/img/favicon.png">
+                                                        </div>
+                                                        <div class="author-details">
+                                                            <p class="author-name mb-0">Themedepo</p>
+                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!----Post date and intrection counter-->
+                                                <div class="ms-auto text-nowrap">
+                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                        15</a>
+                                                    <span class="blog-items-meta-divider mx-2"></span>
+                                                    <a class="blog-items-meta-link text-nowrap"
+                                                        href="blog-single.html#comments"><i
+                                                            class="icofont-speech-comments"></i><span
+                                                            class="comm-count">8</span></a>
                                                 </div>
-
-                                                <!----Post author name and position-->
-                                                <div class="author-details">
-                                                    <p class="fs-xs author-name mb-0">Themedepo</p>
-                                                    <p class="author-position ms-1 mb-0">Manager hight teck</p>
-                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!----Post card item with thumb-->
+                                <article class="mansonry-grid-item col-md-6 col-md-6 col-sm-12">
+                                    <div class="card post-card card-thumb-ready">
+
+                                        <!----Post thumb image-->
+                                        <a href="/#" class="blog-item-thumb position-relative">
+                                            <img class="blog-items-img"
+                                                src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
+                                            <div class="thumb-overlay h-100 w-100"></div>
                                         </a>
 
-                                        <!----Trending post -->
-                                        <a href="/#"
-                                            class="post-item d-flex align-items-center justify-content-space mb-md-3">
+                                        <!----Post title and excerpt-->
+                                        <div class="card-body card-content">
+                                            <a href="" class="blog-card-title">
+                                                <h5>This is the blog tilte for the main blog page</h5>
+                                            </a>
+                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
+                                                the
+                                                main blog post and it can be change through from storage or something
+                                            </p>
+                                            <!----tag elements-->
+                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                        </div>
 
-                                            <!----Post Thumblin -->
-                                            <div class="blog-item-thumb position-relative w-50"
-                                                style="max-width: 80px;">
-                                                <img class="blog-items-img rounded"
-                                                    src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg"
-                                                    alt="post thumb image" />
-                                                <div class="thumb-overlay h-100 w-100"></div>
-                                            </div>
+                                        <!----Post card meta details-->
+                                        <div class="card-footer card-bottom">
+                                            <div class="card-meta-container d-lg-flex align-items-center">
+                                                <a href="" class="post-meta meta-link">
 
-                                            <!----Post Content-->
-                                            <div class="trend-post-content ms-3">
-                                                <div href="" class="blog-card-title">
-                                                    <h6>This is the blog tilte for the main blog page</h6>
-                                                </div>
-                                                <!----Post author name and position-->
-                                                <div class="author-details">
-                                                    <p class="fs-xs author-name mb-0">Themedepo</p>
-                                                    <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    <!----Author image and name-->
+                                                    <div
+                                                        class="author-info d-flex align-items-center justify-content-between">
+                                                        <div class="author-avater-wrapper">
+                                                            <img class="author-avater author-img"
+                                                                src="/assets/img/favicon.png">
+                                                        </div>
+                                                        <div class="author-details">
+                                                            <p class="author-name mb-0">Themedepo</p>
+                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!----Post date and intrection counter-->
+                                                <div class="ms-auto text-nowrap">
+                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                        15</a>
+                                                    <span class="blog-items-meta-divider mx-2"></span>
+                                                    <a class="blog-items-meta-link text-nowrap"
+                                                        href="blog-single.html#comments"><i
+                                                            class="icofont-speech-comments"></i><span
+                                                            class="comm-count">8</span></a>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!----Post card item with thumb-->
+                                <article class="mansonry-grid-item col-6 col-md-6 col-sm-12">
+                                    <div class="card post-card card-thumb-ready">
+
+                                        <!----Post thumb image-->
+                                        <a href="/#" class="blog-item-thumb position-relative">
+                                            <img class="blog-items-img"
+                                                src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg" />
+                                            <div class="thumb-overlay h-100 w-100"></div>
                                         </a>
-                                    </div>
-                                </div>
-                                <hr class="mt-md-4 mb-md-4" />
 
-                                <!----Blog tag button-->
-                                <div class="blog-tag-container">
-                                    <div class="sidebar-feature-title tag-title mb-md-3">
-                                        <h5>Now Trending</h5>
-                                    </div>
-                                    <div class="blog-tag-btn-items grid">
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#OfficeClean</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#CleanHome</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#Healty</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#Living</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#Cheers</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#EverydayClean</a>
-                                        <a href="" class="btn tag-btn mb-2 ms-2">#CleanLife</a>
-                                    </div>
-                                </div>
-                                <hr class="mt-md-4 mb-md-4" />
+                                        <!----Post title and excerpt-->
+                                        <div class="card-body card-content">
+                                            <a href="" class="blog-card-title">
+                                                <h5>This is the blog tilte for the main blog page</h5>
+                                            </a>
+                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
+                                                the
+                                                main blog post and it can be change through from storage or something
+                                            </p>
+                                            <!----tag elements-->
+                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                        </div>
 
-                                <!----Sidebar letter form and advert-->
-                                <div class="newsletter-container">
-                                    <div class="sidebar-feature-title news-letter-title mb-md-3">
-                                        <h5>Subscribe Now</h5>
-                                    </div>
+                                        <!----Post card meta details-->
+                                        <div class="card-footer card-bottom">
+                                            <div class="card-meta-container d-lg-flex align-items-center">
+                                                <a href="" class="post-meta meta-link">
 
-                                    <!----news letter form-->
-                                    <form>
-                                        <div class="mb-3">
-                                            <div class="row">
-                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                                <div class="col-lg-7 pe-1">
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                        aria-describedby="emailHelp">
+                                                    <!----Author image and name-->
+                                                    <div
+                                                        class="author-info d-flex align-items-center justify-content-between">
+                                                        <div class="author-avater-wrapper">
+                                                            <img class="author-avater author-img"
+                                                                src="/assets/img/favicon.png">
+                                                        </div>
+                                                        <div class="author-details">
+                                                            <p class="author-name mb-0">Themedepo</p>
+                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!----Post date and intrection counter-->
+                                                <div class="ms-auto text-nowrap">
+                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                        15</a>
+                                                    <span class="blog-items-meta-divider mx-2"></span>
+                                                    <a class="blog-items-meta-link text-nowrap"
+                                                        href="blog-single.html#comments"><i
+                                                            class="icofont-speech-comments"></i><span
+                                                            class="comm-count">8</span></a>
                                                 </div>
-                                                <div class="col-lg-5 ps-1"> <button type="submit"
-                                                        class="btn btn-primary">Submit</button></div>
                                             </div>
-                                            <div id="emailHelp" class="form-text">We'll never share your email with
-                                                anyone else.</div>
-                                    </form>
-
-                                    <!----ad banner-->
-                                    <div class="promotion-banner position-relative mt-md-4">
-                                        <img src="/assets/img/Image-8.jpg" alt="promotional image" />
+                                        </div>
                                     </div>
+                                </article>
 
+                                <!----Post card item with thumb-->
+                                <article class="mansonry-grid-item col-md-6 col-md-6 col-sm-12">
+                                    <div class="card post-card card-thumb-ready">
+
+                                        <!----Post thumb image-->
+                                        <a href="/#" class="blog-item-thumb position-relative">
+                                            <img class="blog-items-img"
+                                                src="./assets/img/who-s-denilo-V0p1IlRWWhw-unsplash.jpg" />
+                                            <div class="thumb-overlay h-100 w-100"></div>
+                                        </a>
+
+                                        <!----Post title and excerpt-->
+                                        <div class="card-body card-content">
+                                            <a href="" class="blog-card-title">
+                                                <h5>This is the blog tilte for the main blog page</h5>
+                                            </a>
+                                            <p class="blog-card-excerpt">this is the pragraph for the post excerpt of
+                                                the
+                                                main blog post and it can be change through from storage or something
+                                            </p>
+                                            <!----tag elements-->
+                                            <a href="" class="btn tag-btn mb-2 ms-2">OfficeClean</a>
+                                        </div>
+
+                                        <!----Post card meta details-->
+                                        <div class="card-footer card-bottom">
+                                            <div class="card-meta-container d-lg-flex align-items-center">
+                                                <a href="" class="post-meta meta-link">
+
+                                                    <!----Author image and name-->
+                                                    <div
+                                                        class="author-info d-flex align-items-center justify-content-between">
+                                                        <div class="author-avater-wrapper">
+                                                            <img class="author-avater author-img"
+                                                                src="/assets/img/favicon.png">
+                                                        </div>
+                                                        <div class="author-details">
+                                                            <p class="author-name mb-0">Themedepo</p>
+                                                            <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!----Post date and intrection counter-->
+                                                <div class="ms-auto text-nowrap">
+                                                    <a class="blog-items-meta-link meta-date text-nowrap" href="#">Aug
+                                                        15</a>
+                                                    <span class="blog-items-meta-divider mx-2"></span>
+                                                    <a class="blog-items-meta-link text-nowrap"
+                                                        href="blog-single.html#comments"><i
+                                                            class="icofont-speech-comments"></i><span
+                                                            class="comm-count">8</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                        </section>
+
+                        <!----SideBar Auto-->
+                        <aside class="col-lg-4">
+                            <div class="content side-bar-container border-start ms-lg-auto ms-auto w-100"
+                                style="max-width: 22rem; padding: 5px 35px;">
+                                <div class="side-bar-wrapper ">
+
+                                    <!----Categories list and quantity-->
+                                    <div class="blog-cate-container">
+                                        <div class="sidebar-feature-title cate-title mb-md-3">
+                                            <h5>Blog Categories</h5>
+                                        </div>
+
+                                        <!----Categories items list-->
+                                        <ul class="cate-list ps-0">
+
+                                            <!----Categories item-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="fs-xs cate-name ">House</a>
+                                                    <span class="cate-item-count">7</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+
+                                            <!----Categories item list-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="cate-name">Interior</a>
+                                                    <span class="cate-item-count">3</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+
+                                            <!----Categories item list-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="cate-name">kitchen</a>
+                                                    <span class="cate-item-count">8</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+
+                                            <!----Categories item list-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="cate-name">Office</a>
+                                                    <span class="cate-item-count">12</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+
+                                            <!----Categories item list-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="cate-name">Yard</a>
+                                                    <span class="cate-item-count">9</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+
+                                            <!----Categories item list-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="cate-name">roof top</a>
+                                                    <span class="cate-item-count">5</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+
+                                            <!----Categories item list-->
+                                            <li>
+                                                <div class="d-flex cate-item justify-content-between">
+                                                    <a href="" class="cate-name">Bathroom</a>
+                                                    <span class="cate-item-count">7</span>
+                                                </div>
+                                                <hr class="mt-0 mb-1" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <hr class="mt-md-4 mb-md-4" />
+
+                                    <!----Trending post highlights-->
+                                    <div class="blog-trend-container">
+                                        <div class="sidebar-feature-title trending-title mb-md-3">
+                                            <h5>Now Trending</h5>
+                                        </div>
+                                        <div class="blog-trending-post">
+
+                                            <!----Trending post -->
+                                            <a href="/#"
+                                                class="post-item d-flex align-items-center justify-content-space mb-md-3">
+
+                                                <!----Post Thumblin -->
+                                                <div class="blog-item-thumb position-relative w-50"
+                                                    style="max-width: 80px;">
+                                                    <img class="blog-items-img rounded"
+                                                        src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg"
+                                                        alt="post thumb image" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                </div>
+
+                                                <!----Post Content-->
+                                                <div class="trend-post-content ms-3">
+                                                    <div href="" class="blog-card-title">
+                                                        <h6>This is the blog tilte for the main blog page</h6>
+                                                    </div>
+
+                                                    <!----Post author name and position-->
+                                                    <div class="author-details">
+                                                        <p class="fs-xs author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!----Trending post -->
+                                            <a href="/#"
+                                                class="post-item d-flex align-items-center justify-content-space mb-md-3">
+
+                                                <!----Post Thumblin -->
+                                                <div class="blog-item-thumb position-relative w-50"
+                                                    style="max-width: 80px;">
+                                                    <img class="blog-items-img rounded"
+                                                        src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg"
+                                                        alt="post thumb image" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                </div>
+
+                                                <!----Post Content-->
+                                                <div class="trend-post-content ms-3">
+                                                    <div href="" class="blog-card-title">
+                                                        <h6>This is the blog tilte for the main blog page</h6>
+                                                    </div>
+
+                                                    <!----Post author name and position-->
+                                                    <div class="author-details">
+                                                        <p class="fs-xs author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <!----Trending post -->
+                                            <a href="/#"
+                                                class="post-item d-flex align-items-center justify-content-space mb-md-3">
+
+                                                <!----Post Thumblin -->
+                                                <div class="blog-item-thumb position-relative w-50"
+                                                    style="max-width: 80px;">
+                                                    <img class="blog-items-img rounded"
+                                                        src="./assets/img/cleanimalist-OCmCO-wLe-s-unsplash.jpg"
+                                                        alt="post thumb image" />
+                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                </div>
+
+                                                <!----Post Content-->
+                                                <div class="trend-post-content ms-3">
+                                                    <div href="" class="blog-card-title">
+                                                        <h6>This is the blog tilte for the main blog page</h6>
+                                                    </div>
+                                                    <!----Post author name and position-->
+                                                    <div class="author-details">
+                                                        <p class="fs-xs author-name mb-0">Themedepo</p>
+                                                        <p class="author-position ms-1 mb-0">Manager hight teck</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-md-4 mb-md-4" />
+
+                                    <!----Blog tag button-->
+                                    <div class="blog-tag-container">
+                                        <div class="sidebar-feature-title tag-title mb-md-3">
+                                            <h5>Now Trending</h5>
+                                        </div>
+                                        <div class="blog-tag-btn-items grid">
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#OfficeClean</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#CleanHome</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#Healty</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#Living</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#Cheers</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#EverydayClean</a>
+                                            <a href="" class="btn tag-btn mb-2 ms-2">#CleanLife</a>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-md-4 mb-md-4" />
+
+                                    <!----Sidebar letter form and advert-->
+                                    <div class="newsletter-container">
+                                        <div class="sidebar-feature-title news-letter-title mb-md-3">
+                                            <h5>Subscribe Now</h5>
+                                        </div>
+
+                                        <!----news letter form-->
+                                        <form>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <div class="col-lg-7 pe-1">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="col-lg-5 ps-1"> <button type="submit"
+                                                            class="btn btn-primary">Submit</button></div>
+                                                </div>
+                                                <div id="emailHelp" class="form-text">We'll never share your email with
+                                                    anyone else.</div>
+                                        </form>
+
+                                        <!----ad banner-->
+                                        <div class="promotion-banner position-relative mt-md-4">
+                                            <img src="/assets/img/Image-8.jpg" alt="promotional image" />
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </aside>
+                        </aside>
+                    </div>
                 </div>
             </div>
 
@@ -931,11 +977,11 @@
         </section>
         <!-- end features -->
         <div class="ribbon-wrapper position-absolute" style="z-index:100; width:170px; transform: translateY(-12px);">
-            <img src="../assets/img/footer-ribbon.png" alt="" >
+            <img src="../assets/img/footer-ribbon.png" alt="">
         </div>
     </main>
     <footer class="section-padding-top position-relative">
-       
+
         <section class="footer-section section-had-bg">
             <div class="position-absolute background-image had-image h-100 w-100">
                 <div class="bg-image-wrapper">
@@ -1001,7 +1047,7 @@
                                         <li class="mb-1"><a class="text-decoration-none text-capitalize"
                                                 href="#pricing">Fixing/Repiring</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -1034,29 +1080,30 @@
                     </div>
                     <div class="col-12 col-lg-4 footer__column">
                         <div class="content-block">
-                        <div class="mb-4">
-                            <h3 class="footer__heading text-secondary-1">Office Address</h3>
-                            <p>59 Street, B4 Appartment, <br>Australia
-                              <br> +985-8844-000
-                               <br> info@cleanix.com</p>
-                        </div>
-                           <div class="mt-4">
-                            <h3 class="footer__heading text-secondary-1">News Letter</h3>
-                            <form class="news-letter-form" name="nl">
-                                <div class="mb-3">
-                                    <div class="row">
-                                        <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-                                        <div class="col-lg-7 pe-0">
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                            <div class="mb-4">
+                                <h3 class="footer__heading text-secondary-1">Office Address</h3>
+                                <p>59 Street, B4 Appartment, <br>Australia
+                                    <br> +985-8844-000
+                                    <br> info@cleanix.com
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="footer__heading text-secondary-1">News Letter</h3>
+                                <form class="news-letter-form" name="nl">
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                                            <div class="col-lg-7 pe-0">
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-lg-5 ps-0"> <button type="submit"
+                                                    class="btn btn-primary">Submit</button></div>
                                         </div>
-                                        <div class="col-lg-5 ps-0"> <button type="submit"
-                                                class="btn btn-primary">Submit</button></div>
-                                    </div>
-                                    <div id="emailHelp" class="form-text">We'll never share your email with
-                                        anyone else.</div>
-                            </form>
-                           </div>
+                                        <div id="emailHelp" class="form-text">We'll never share your email with
+                                            anyone else.</div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
