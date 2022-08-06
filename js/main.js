@@ -154,3 +154,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
     }
   });
+
+
+  //........... Home > Services.................//
+  
+  
