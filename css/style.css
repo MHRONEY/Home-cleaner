@@ -47,6 +47,10 @@
 
 }
 
+.btn {
+  border-radius: .2vmax!important;
+}
+
 a{
   text-decoration: none;
 }
@@ -356,6 +360,30 @@ nav {
 /* ------------------navbar end------------------*/
 
 
+/*--------------------------Slider Style---------------------------*/
+#image-carousel .splide__pagination{
+  bottom: 2rem;
+}
+
+#image-carousel .splide__pagination li{
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+#image-carousel .splide__pagination li button{
+width: 12px;
+height: 12px;
+transform: scale(1)!important;
+border: none;
+}
+#image-carousel .splide__pagination li button:not(.is-active){
+ background-color: transparent;
+  }
+
+
+
 
 
 /*--------------------------Carousel Style--------------------------*/
@@ -384,7 +412,7 @@ nav {
 }
 
 
-.splide__pagination {
+.carousel .splide__pagination {
   bottom: -2em;
   left: auto!important;
 }
@@ -468,6 +496,10 @@ footer .news-letter-form button{
 }
 
 /*------------------Tab and accordion-------------------------------*/
+.tab-content *{
+transition: ease .5s;
+}
+
 .tab-content nav{
   background-color: transparent!important;
 }
@@ -476,6 +508,57 @@ footer .news-letter-form button{
   background-color: transparent!important;
   border-bottom-color: transparent!important;
 }
+.plan-nav{
+  width: max-content;
+}
+
+.plan-nav .nav{
+  box-shadow:1px 1px 10px var(--shadow-color);
+  overflow: hidden;
+}
+
+.plan-nav .nav .nav-link{
+  color: var(--black-color);
+  font-weight: 600;
+}
+
+.plan-nav .active, .plan-nav button:hover{
+  background-color: var(--primary-color)!important;
+  color: var(--light-color)!important;
+  border-radius: 0;
+  border-color: transparent!important;
+}
+
+.plan-header *{
+  font-weight: 600;
+}
+
+.plan-price .plan-price{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.plan-item:hover .plan-price{
+color: var(--primary-color)
+}
+
+.plan-action .btn{
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: small;
+}
+
+.plan-action .btn:hover{
+  background-color: var(--primary-color);
+  box-shadow: 1px 1px 15px var(--primary-color);
+}
+
+@media (min-width:992px){
+.tab-pane .row{
+  width:75%;
+}
+}
+
 
 /*------------------Section and Container --------------------------*/
 .section{
@@ -555,7 +638,8 @@ footer .news-letter-form button{
   width: 100%;
 }
 .section-had-bg *{
-  /* color: #fff; */
+ color: inherit;
+
 }
 
 

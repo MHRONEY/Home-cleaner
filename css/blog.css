@@ -27,6 +27,11 @@ img{
     align-items: center;
     overflow: hidden;
 }
+@media (max-width:640px){
+    .hero-banner {
+        min-height: 300px;
+    }
+}
 
 
 /*----feature post item----*/
