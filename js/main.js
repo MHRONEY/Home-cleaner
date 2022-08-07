@@ -68,7 +68,29 @@
 // })
 
 
+//Adjust the header height with the first section padding so the section content do not cover by the header when the header is aabsolute or fixed position
+try {
+  document.addEventListener('DOMContentLoaded', function(){
+    let headerHeight = document.querySelector("header #main-nav").offsetHeight;
+    let heroSection = document.querySelector("#home .hero-banner");
+setTimeout(() => {
+  if(heroSection === null){
+    heroSection = document.querySelector("#hero-banner");
+  }
+  if(heroSection === null){
+    heroSection = document.querySelector("#hero");
+  }
+  console.log(headerHeight, heroSection);
+heroSection.style.paddingTop = headerHeight + "px";
+}, 1500);
+  });
+} catch (error) {
+  
+}
+
+
 // tab control
+
 
 
 
@@ -85,11 +107,12 @@ try {
     $grid.masonry();
   });
 
-
-
 } catch (error) {
 
 }
+
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {

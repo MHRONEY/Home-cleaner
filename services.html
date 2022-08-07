@@ -7,13 +7,19 @@
 
 
     <!-- title -->
-    <title>Home Cleaning</title>
+    <title>Services - Home cleaner</title>
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 
     <!-- google font -->
@@ -26,20 +32,13 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="./css/style.css">
-
-
-
-
-
+    <!-- <link rel="stylesheet" href="./css/blog.css"> -->
 
 
 
 </head>
 
 <body>
-
-
-
     <!-- start header -->
     <header>
         <!-- navbar start -->
@@ -60,13 +59,13 @@
                 <div class="collapse navbar-collapse mr-4 nav-right" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link px-0 nav-line active" href="/index.html">HOME</a>
+                            <a class="nav-link px-0 nav-line" href="/index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0 nav-line" href="#features">ABOUT US</a>
+                            <a class="nav-link px-0 nav-line" href="/about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0 nav-line" href="/services.html">SERVICES</a>
+                            <a class="nav-link px-0 nav-line active" href="/services.html">SERVICES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-0 nav-line" href="#feedbacks">FAQS</a>
@@ -77,7 +76,6 @@
                         <li class="nav-item">
                             <a class="nav-link px-0" href="#pricing">CONTACTS</a>
                         </li>
-
                     </ul>
                 </div>
 
@@ -112,87 +110,46 @@
     </header>
     <!-- end header -->
 
-
     <main>
-        <section id="hero-banner" class="home-hero">
-          <div id="image-carousel" class="splide" aria-label="Beautiful Images">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <div class="slider_banner bg-danger text-center mr-auto p-5 text-white d-flex justify-content-center align-items-center "
-                            style="background-image: url('/assets/img/slide-1.jpg');">
-                            <div class="w-100 d-center">
-                                <p class="small">Professional <span class="fw-bold" style="color:#093260">Cleaning
-                                        Service</span> </p>
-                                <h2 class="fs-1 fw-bold text-uppercase p-2">So fresh & so clean<br />
-                                    we promise!</h2>
-                                <button class="btn bg-primary text-white pt-2 pb-2 ps-4 pe-4">Get a Quote</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider_banner bg-danger text-center mr-auto p-5 text-white d-flex justify-content-center align-items-center "
-                            style="background-image: url('/assets/img/slide-2.jpg');">
-                            <div class="w-100 d-center">
-                                <p class="small">Professional <span class="fw-bold" style="color:#093260">Cleaning
-                                        Service</span> </p>
-                                <h2 class="fs-1 fw-bold text-uppercase p-2">So fresh & so clean<br />
-                                    we promise!</h2>
-                                <button class="btn bg-primary text-white pt-2 pb-2 ps-4 pe-4">Get a Quote</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="slider_banner bg-danger text-center mr-auto p-5 text-white d-flex justify-content-center align-items-center "
-                            style="background-image: url('/assets/img/slide-3.jpg');">
-                            <div class="w-100 d-center">
-                                <p class="small">Professional <span class="fw-bold" style="color:#093260">Cleaning
-                                        Service</span> </p>
-                                <h2 class="fs-1 fw-bold text-uppercase p-2">So fresh & so clean<br />
-                                    we promise!</h2>
-                                <button class="btn bg-primary text-white pt-2 pb-2 ps-4 pe-4">Get a Quote</button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+        <!-- start hero -->
+        <section id="hero" class="hero section-had-bg d-flex">
+
+            <!----Section Bacground-->
+            <div class="position-absolute background-image had-image h-100 w-100">
+                <div class="bg-image-wrapper">
+                    <img src="./assets/img/blog-banner.png" class="img bg-img" />
+                </div>
+                <div class="bg-overlay h-100 w-100"></div>
             </div>
-          </div>
+
+            <!----Section Content-->
+            <div class="section-content container d-flex">
+                <div class="content d-center w-50">
+                    <h1 class="hero-heading text-center text-white">Services</h1>
+                    <hr class="bg-light w-25 m-auto mt-3 mb-3 p-1" />
+                    <p class="text-center text-white hero-text">Cleaning can be a chore and we know you have many
+                        choices when you consider hiring a comprehensive, high quality, reliable cleaning service
+                    </p>
+                </div>
+            </div>
         </section>
-<!-- 
-
-        <div class="slider_banner bg-danger text-center mr-auto p-5 text-white d-flex justify-content-center align-items-center "
-            style="background-image: url('/assets/img/slide-1.jpg');">
-            <div class="">
-                <p class="fs-6 ">Professional <span class="fw-bold" style="color:#093260">Cleaning Service</span> </p>
-                <h2 class="fs-1 fw-normal text-uppercase p-2">So fresh & so clean<br />
-                    we promise!</h2>
-                <button class="btn bg-primary text-white">Get a Quote</button>
-            </div>
-        </div> -->
-
-
-
-
-
-
-        <!-- end home -->
-
+        <!-- end hero -->
 
         <!-- start features -->
-        <section id="home-services" class="section pt-3 pb-3 position-relative">
+        <section id="service-intro" class="section section-had-bg pb-3 pt-0 mt-5 position-relative">
 
             <!----Section Bacground-->
             <div class="position-absolute background-image image-empty h-100 w-100">
                 <div class="bg-image-wrapper">
                 </div>
-                <div class="bg-overlay h-100 w-100"></div>
+                <div class="bg-overlay h-100 w-100" style="opacity: 0.95;"></div>
             </div>
 
             <!-----Section Content-->
             <div class="section-content">
 
                 <!-----Section Title-->
-                <div class="section-title pt-4 pb-4 mt-5 mb-4 position-relative">
+                <div class="section-title pt-4 pb-4 mt-0 mb-4 position-relative">
 
                     <!----Title Bacground-->
                     <div class="position-absolute background-image image-empty h-100 w-100">
@@ -202,69 +159,321 @@
                     </div>
                     <!----Section Title Content-->
                     <div class="content container section-title">
-                        <h2 class="mb-0">Our <span style="color: var(--primary-color);">Cleaning </span>Services</h2>
+                        <h2 class="mb-0">Our <span style="color: var(--primary-color);">Services</span> </h2>
                     </div>
                 </div>
 
-                <!----Main Content-->
+                <!-----Main Content-->
                 <div class="main-content container pb-3 mb-2 mb-md-4">
-                    <!---Services Carousel-->
-                    <div id="service-carousel" class="splide feature-post-carousel mb-3">
-                        <div class="splide__track">
-                            <ul class="splide__list feature-post-list p-5" style="padding: 2vw!important;">
+                    <div class="row align-items-center pt-5 mt-md-2">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="content-block mb-4">
+                                <p>Cleaning Company service is a fully integrated janitorial cleaning services
+                                    company that provides comprehensive, high quality, reliable cleaning solutions to
+                                    commercial, corporate, industrial and residential clients.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12">
+                            <div class="content-block">
+                                <div class="row">
 
-                                <!----List Item-->
-                                <li class="splide__slide shadow">
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
 
-                                    <!----Team profile card item with thumb-->
-                                    <div class="services-item">
-                                        <div class="card service-card card-thumb-ready">
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/Image-8.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <!----Profile image-->
-                                            <div class="item-thumb position-relative rounded">
-                                                <div class="thumb-wrapper">
-                                                    <div class="d-flex">
-                                                        <a href="#" image->
-                                                            <img class="items-img rounded"
-                                                                src="./assets/img/vinicius-amnx-amano-17NCG_wOkMY-unsplash.jpg" />
-                                                            <div class="thumb-overlay h-100 w-100"></div>
-                                                        </a>
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!----Profile name and Position-->
-                                            <div class="card-body card-content">
-                                                <a href="" class="profile-name">
-                                                    <h5>This is tilte </h5>
-                                                </a>
-                                                <p class="profile-pos">this is the pragraph</p>
+                                        </div>
+                                    </div>
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/gallery5-676x700.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-3">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary mt-3">Learn More</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                            </ul>
+
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/francesca-tosolini-tHkJAMcO3QE-unsplash.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/pexels-karolina-grabowska-4239007.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/gallery1-660x410.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/portfolio-05-676x700.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/gallery6-660x410.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-----Services column-->
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                                        <div class="content-block">
+                                            <!----Service card item with thumb-->
+                                            <div class="service-item">
+                                                <div class="card services-card card-thumb-ready border-0 shadow-sm">
+
+                                                    <!----Service image-->
+                                                    <div class="item-thumb position-relative">
+                                                        <div class="thumb-wrapper">
+                                                            <div class="">
+                                                                <a href="#" image->
+                                                                    <img class="items-img"
+                                                                        src="./assets/img/services/gallery5-676x700.png" />
+                                                                    <div class="thumb-overlay h-100 w-100"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!----Service name and Details-->
+                                                    <div class="card-body card-content">
+                                                        <div class="srvice-name">
+                                                            <h5>Apartment Cleaning</h5>
+                                                        </div>
+                                                        <p class="mt-4 mb-4">OCleaning Company offers a program
+                                                            designed to service residents of apartments and
+                                                            condominiums.</p>
+                                                        <a href="" class="btn btn-outline-primary">Learn More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <!--main post grid-->
-                    <div class="row pt-5 mt-md-2">
-
-
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section id="about-intro" class="section section-had-bg pb-3 pt-3 position-relative">
+        <section id="service-list" class="section pt-3 position-relative">
 
             <!----Section Bacground-->
-            <div class="position-absolute background-image had-image h-100 w-100">
+            <div class="position-absolute background-image image-empty h-100 w-100">
                 <div class="bg-image-wrapper">
-                    <img src="/assets/img/colorful-composition-with-sponges-rags-gloves-detergent-general-cleaning-cleaning-service-concept.png"
-                        class="bg-image h-100">
+
                 </div>
-                <div class="bg-overlay h-100 w-100 bg-light" style="opacity: 0.95;"></div>
+                <div class="bg-overlay h-100 w-100" style="opacity: 0.95;"></div>
             </div>
 
             <!-----Section Content-->
@@ -281,37 +490,46 @@
                     </div>
                     <!----Section Title Content-->
                     <div class="content container section-title">
-                        <h2 class="mb-0">More than <span style="color: var(--primary-color);">10 years</span> of
-                            cleaning
-                            experience</h2>
+                        <h2 class="mb-0">Our <span style="color: var(--primary-color);">Values</span></h2>
                     </div>
                 </div>
 
                 <!-----Main Content-->
-                <div class="main-content container pb-5 mb-2 mb-md-4">
-                    <div class="row align-items-center pt-5 mt-md-2">
-                        <div class="col-6">
+                <div class="main-content container ">
+                    <div class="row align-items-center pt-3 mt-md-2">
+                        <div class="col-md-6 col-sm-12">
                             <div class="content-block">
-                                <p>Cleaning Company service is a fully integrated janitorial cleaning services
-                                    company that provides comprehensive, high quality, reliable cleaning solutions to
-                                    commercial, corporate, industrial and residential clients.
-                                    <br>
-                                    <br>Our diligent management and work ethic are central to
-                                    Cleaning Company service business philosophy and critical to delivering
-                                    consistent, quality cleaning services. We pride ourselves on making our management
-                                    accountable to the client through direct access and interaction with our managing
-                                    director.
-                                </p>
-                                <a href="/#" class="btn btn-primary">GET A QUOTE</a>
+                                <p class="lead">Behind our commitment to excellence are few key attributes that define
+                                    who we are and what makes us different from any other.</p>
+                                <ul class="our-values-list mt-5"
+                                    style="list-style:square url('../assets/img/leaves.png');">
+                                    <li class="mb-md-4">
+                                        <h6>Client oriented</h6>
+                                        <p>We hold a successful track record of satisfying our customers and getting
+                                            back their bond money.</p>
+                                    </li>
+                                    <li class="mb-md-4">
+                                        <h6>Eco-Friendly Oriented</h6>
+                                        <p>We hold a successful track record of satisfying our customers and getting
+                                            back their bond money.</p>
+                                    </li>
+                                    <li class="mb-md-4">
+                                        <h6>Expansion / Growth</h6>
+                                        <p>We hold a successful track record of satisfying our customers and getting
+                                            back their bond money.</p>
+                                    </li>
+                                </ul>
+                                <a class="btn btn-outline-primary">GET A QUOTE</a>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="content-block d-flex align-items-center justify-content-end">
-                                <img src="/assets/img/about-group-image.png" class="w-75">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="content-block d-flex justify-content-end align-items-center">
+                                <img src="/assets/img/Group 10178.png" alt="about value image" class="w-75">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -1147,29 +1365,15 @@
             </div>
         </section>
 
-
-
-
         <!-- end features -->
-
-
-
-
-
-
-
-
-
-
         <div class="ribbon-wrapper position-absolute" style="z-index:100; width:170px; transform: translateY(-12px);">
-            <img src="../assets/img/footer-ribbon.png" alt="" >
+            <img src="../assets/img/footer-ribbon.png" alt="">
         </div>
-
     </main>
 
-    <!--================================Footer Start ======================================-->>
+    <!-------Footer Section-->
     <footer class="section-padding-top position-relative">
-       
+
         <section class="footer-section section-had-bg">
             <div class="position-absolute background-image had-image h-100 w-100">
                 <div class="bg-image-wrapper">
@@ -1235,7 +1439,7 @@
                                         <li class="mb-1"><a class="text-decoration-none text-capitalize"
                                                 href="#pricing">Fixing/Repiring</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -1268,29 +1472,30 @@
                     </div>
                     <div class="col-12 col-lg-4 footer__column">
                         <div class="content-block">
-                        <div class="mb-4">
-                            <h3 class="footer__heading text-secondary-1">Office Address</h3>
-                            <p>59 Street, B4 Appartment, <br>Australia
-                              <br> +985-8844-000
-                               <br> info@cleanix.com</p>
-                        </div>
-                           <div class="mt-4">
-                            <h3 class="footer__heading text-secondary-1">News Letter</h3>
-                            <form class="news-letter-form" name="nl">
-                                <div class="mb-3">
-                                    <div class="row">
-                                        <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-                                        <div class="col-lg-7 pe-0">
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                            <div class="mb-4">
+                                <h3 class="footer__heading text-secondary-1">Office Address</h3>
+                                <p>59 Street, B4 Appartment, <br>Australia
+                                    <br> +985-8844-000
+                                    <br> info@cleanix.com
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="footer__heading text-secondary-1">News Letter</h3>
+                                <form class="news-letter-form" name="nl">
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                                            <div class="col-lg-7 pe-0">
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-lg-5 ps-0"> <button type="submit"
+                                                    class="btn btn-primary">Submit</button></div>
                                         </div>
-                                        <div class="col-lg-5 ps-0"> <button type="submit"
-                                                class="btn btn-primary">Submit</button></div>
-                                    </div>
-                                    <div id="emailHelp" class="form-text">We'll never share your email with
-                                        anyone else.</div>
-                            </form>
-                           </div>
+                                        <div id="emailHelp" class="form-text">We'll never share your email with
+                                            anyone else.</div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1298,12 +1503,21 @@
         </section>
     </footer>
 
-    <script src="./js/vanillajs-scrollspy.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
     <script src="./js/splide.min.js"></script>
-
     <script src="./js/main.js"></script>
+    <script>
+        const triggerTabList = document.querySelectorAll('#team-tab button')
+        triggerTabList.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl)
 
+            triggerEl.addEventListener('click', event => {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
 
+    </script>
 </body>
 
 </html>
