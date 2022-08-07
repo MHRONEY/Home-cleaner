@@ -184,12 +184,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+  //........... Home > Services.................//
+  
+  
 
 try {
     var splideFeature = new Splide('#service-carousel', {
       type: 'loop',
-      gap: '2.1rem',
-      perPage: 3,
+      gap: '1.2rem',
+      perPage: 4,
       perMove: 1,
       breakpoints: {
         840: {
@@ -208,9 +211,6 @@ try {
     } catch (error) {
 
     }
-
-
-
 
 
   try {
