@@ -638,7 +638,8 @@ color: var(--primary-color)
   width: 100%;
 }
 .section-had-bg *{
-  /* color: #fff; */
+ color: inherit;
+
 }
 
 
