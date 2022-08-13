@@ -578,7 +578,8 @@ footer .news-letter-form button {
 }
 
 .plan-nav {
-  width: max-content;
+  /* width: max-content; */
+  width: fit-content;
 }
 
 .plan-nav .nav {
